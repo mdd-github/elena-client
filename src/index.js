@@ -7,6 +7,7 @@ import { applicationInitialize } from './store/application/actions';
 import { ApplicationLoader } from './components/ApplicationLoader';
 
 import './assets/scss/styles.scss';
+import { Router } from './components/Router';
 
 
 const Application = (props) => {
@@ -21,7 +22,7 @@ const Application = (props) => {
 		<>
 			{
 				applicationState.initialized
-					? <h1>Content</h1>
+					? <Router/>
 					: <ApplicationLoader/>
 			}
 		</>
