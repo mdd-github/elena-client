@@ -1,8 +1,13 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider, useDispatch, useSelector } from 'react-redux';
+
 import { store } from './store';
 import { applicationInitialize } from './store/application/actions';
+import { ApplicationLoader } from './components/ApplicationLoader';
+
+import './assets/scss/styles.scss';
+
 
 const Application = (props) => {
 	const dispatch = useDispatch();
@@ -15,7 +20,9 @@ const Application = (props) => {
 	return (
 		<>
 			{
-				!applicationState.initialized ? <h1>Please wait..</h1> : <h1>Hello</h1>
+				applicationState.initialized
+					? <h1>Content</h1>
+					: <ApplicationLoader/>
 			}
 		</>
 	);
