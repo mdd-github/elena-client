@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import { Login } from './Login';
 import { Register } from './Register';
+import { CheckEmail } from './CheckEmail';
 
 export const AuthRouter = () => {
 	let { path } = useRouteMatch();
@@ -13,6 +14,9 @@ export const AuthRouter = () => {
 			</Route>
 			<Route path={`${path}/login`}>
 				<Login/>
+			</Route>
+			<Route path={`${path}/check-email`}>
+				<CheckEmail/>
 			</Route>
 			<Route path="*">
 				<h1>Not found</h1>

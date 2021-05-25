@@ -4,10 +4,11 @@ import { Provider, useDispatch, useSelector } from 'react-redux';
 
 import { store } from './store';
 import { applicationInitialize } from './store/application/actions';
-import { ApplicationLoader } from './components/ApplicationLoader';
+import { Router } from './components/Router';
+import { Layout } from './components/common/Layout';
 
 import './assets/scss/styles.scss';
-import { Router } from './components/Router';
+import { BrowserRouter } from 'react-router-dom';
 
 
 const Application = (props) => {
@@ -21,18 +22,23 @@ const Application = (props) => {
 	return (
 		<>
 			{
-				applicationState.initialized
-					? <Router/>
-					: <ApplicationLoader/>
+				applicationState.initialized &&
+				<BrowserRouter>
+					<Layout>
+						<Router/>
+					</Layout>
+				</BrowserRouter>
 			}
 		</>
 	);
-};
+}
+;
 
 
 ReactDOM.render(
-	<Provider store={store}>
-		<Application/>
-	</Provider>,
-	document.getElementById('root'),
+<Provider store={store}>
+	<Application/>
+</Provider>
+,
+document.getElementById('root'),
 );
