@@ -18,7 +18,7 @@ export const Register = () => {
 		if(registerState && registerState.success) {
 			history.push('/auth/check-email');
 		}
-	}, [registerState]);
+	}, [registerState, history]);
 
 	const [formData, setFormData] = useState({
 		firstName: '',

@@ -13,7 +13,7 @@ export const Header = () => {
 
 	return (
 		<header>
-			<div className="navbar navbar-expand-lg navbar-dark bg-theme">
+			<div className="navbar navbar-expand-lg navbar-dark bg-dark">
 				<div className="container-fluid">
 					<div className="">
 						<Link to="/" className="navbar-brand">Матрица судьбы</Link>

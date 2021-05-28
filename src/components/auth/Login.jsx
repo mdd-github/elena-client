@@ -17,7 +17,7 @@ export const Login = () => {
 		if(loginState && loginState.success) {
 			history.push('/');
 		}
-	}, [loginState]);
+	}, [loginState, history]);
 
 	const [formData, setFormData] = useState({
 		email: '',

@@ -1,0 +1,51 @@
+@import "../variables";
+
+.table {
+  &_Header {
+    background-color: #FFFAF0;
+    font-size: 0.75rem;
+  }
+
+  &_Footer {
+    background-color: #FFFAF0;
+    font-size: 0.75rem;
+  }
+}
+
+.row {
+  font-size: 0.8rem;
+
+  &_VioletRed {
+    background-color: lighten($color-violet-red, 20%);
+  }
+
+  &_SteelBlue {
+    background-color: lighten($color-steel-blue, 20%);
+  }
+
+  &_DarkTurquoise {
+    background-color: lighten($color-dark-turquoise, 20%);
+  }
+
+  &_SpringGreen {
+    background-color: lighten($color-spring-green, 20%);
+  }
+
+  &_Yellow {
+    background-color: lighten($color-yellow, 20%);
+  }
+
+  &_Chocolate {
+    background-color: lighten($color-chocolate, 20%);
+  }
+
+  &_Tomato {
+    background-color: lighten($color-tomato, 20%);
+  }
+}
+
+.cell {
+  &_Value {
+    font-weight: 700;
+  }
+}
