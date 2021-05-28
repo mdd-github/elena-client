@@ -1,0 +1,99 @@
+<svg width="1150" height="1e3" version="1.1" viewBox="0 0 304.27 264.58" xmlns="http://www.w3.org/2000/svg">
+	<g transform="translate(-4.3495 -22.484)">
+		<path transform="matrix(.71687 0 0 .71712 24.892 24.718)" d="m303.96 303.82-122.56 50.765-122.56-50.765-50.765-122.56 50.765-122.56 122.56-50.765 122.56 50.765 50.765 122.56z" style="fill:none;stop-color:#000000;stroke-width:.73803;stroke:#000"/>
+		<path d="m154.93 30.416-87.857 36.405-36.392 87.889h248.5l-36.392-87.889z" style="fill:#fffaf0;stop-color:#000000"/>
+		<path d="m154.97 279-87.857-36.405-36.392-87.889h248.5l-36.392 87.889z" style="fill:#d3d3d3;stop-color:#000000"/>
+		<path d="m154.97 218.28 63.364-63.574" style="fill:none;stroke-dasharray:2.38125, 2.38125;stroke-opacity:.49815;stroke-width:.79375;stroke:#000"/>
+		<path d="m84.105 154.71 140.56-1e-5" style="fill:none;stroke-opacity:.75;stroke-width:.28383px;stroke:#000"/>
+		<path d="m109.89 103.49-10.451-4.2738 4.2782 10.446 2.5812-2.5812 95.568 95.576-2.5812 2.5812 11.135 4.9582-4.9623-11.131-2.5812 2.5812-47.442-47.446-48.126-48.13z" style="fill:#4682b4;stop-color:#000000"/>
+		<path d="m154.97 80.53 1e-5 144.32" style="fill:none;stroke-opacity:.75;stroke-width:.2876px;stroke:#000"/>
+		<rect x="76.458" y="76.18" width="156.95" height="157.06" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#000"/>
+		<path d="m199.97 103.49 10.451-4.2738-4.2782 10.446-2.5812-2.5812-48.126 48.13-47.442 47.446 2.5812 2.5812-11.135 4.9582 4.9623-11.131 2.5812 2.5812 95.568-95.576z" style="fill:#ff6347;stop-color:#000000"/>
+		<path d="m30.685 154.71 36.391-87.889" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<rect transform="rotate(45)" x="140.48" y="-78.688" width="156.95" height="157.06" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#000"/>
+		<path d="m279.18 154.71-36.391-87.889" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<path d="m242.79 242.6 36.391-87.889" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<path d="m67.076 242.6-36.391-87.889" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<path d="m67.061 242.6 87.889 36.391" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<path d="m242.81 242.6-87.889 36.391" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<path d="m154.92 30.422 87.889 36.391" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<path d="m154.95 30.422-87.889 36.391" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle cx="154.93" cy="265.91" r="13.229" style="fill:#ff6347;stop-color:#000000"/>
+		<circle cx="154.93" cy="43.645" r="13.229" style="fill:#c71585;stop-color:#000000"/>
+		<circle cx="265.95" cy="154.84" r="13.229" style="fill:#ff6347;stop-color:#000000"/>
+		<circle cx="43.774" cy="154.57" r="13.229" style="fill:#c71585;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="110.91" r="13.229" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="-111.22" r="13.229" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="329.97" cy="-.15836" r="13.229" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="107.93" cy="-.15836" r="13.229" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle cx="154.93" cy="155.57" r="13.229" style="fill:#f8d900;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="110.91" r="12.7" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="-111.22" r="12.7" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="329.97" cy="-.15836" r="12.7" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="107.93" cy="-.15836" r="12.7" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="matrix(.81243 0 0 .81243 47.456 65.76)" cx="132.29" cy="219.49" r="10.583" style="fill:#1a1a1a;filter:url(#b);stop-color:#000000"/>
+		<circle transform="matrix(.81243 0 0 .81243 47.456 65.76)" cx="132.29" cy="219.49" r="10.054" style="fill:#fff;filter:url(#b);stop-color:#000000"/>
+		<ellipse cx="43.774" cy="154.57" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#fff"/>
+		<ellipse cx="154.93" cy="155.57" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-opacity:.9948;stroke-width:.52917;stroke:#fff"/>
+		<ellipse cx="154.93" cy="43.615" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#fff"/>
+		<ellipse cx="265.95" cy="154.84" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#fff"/>
+		<ellipse cx="154.93" cy="265.91" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#fff"/>
+		<circle cx="65.601" cy="154.71" r="8.599" style="fill:#4682b4;stop-color:#000000"/>
+		<circle cx="65.601" cy="154.71" r="8.0426" style="fill:none;stop-color:#000000;stroke-width:.42995;stroke:#fff"/>
+		<circle cx="154.93" cy="80.025" r="5.9531" style="fill:#00ced1;stop-color:#000000"/>
+		<circle cx="154.93" cy="80.025" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<circle cx="80.153" cy="154.71" r="5.9531" style="fill:#00ced1;stop-color:#000000"/>
+		<circle cx="80.153" cy="154.71" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<circle cx="154.61" cy="117.8" r="5.9531" style="fill:#00fa9a;stop-color:#000000"/>
+		<circle cx="229.58" cy="154.71" r="5.9531" style="fill:#ff7f24;stop-color:#000000"/>
+		<circle cx="229.58" cy="154.71" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<circle cx="154.93" cy="229.53" r="5.9531" style="fill:#ff7f24;stop-color:#000000"/>
+		<circle cx="154.93" cy="229.53" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<text transform="rotate(45)" x="182.96863" y="-1.6113183" style="font-family:Montserrat;font-size:2.8222px;line-height:1.25;stroke-width:.26458;text-align:center;text-anchor:middle" xml:space="preserve"><tspan x="182.96863" y="-1.6113183" style="font-size:2.8222px;stroke-width:.26458;text-align:center;text-anchor:middle">Внутренний мужчина (как?)</tspan></text>
+		<text transform="rotate(-45)" x="35.300549" y="217.43085" style="font-family:Montserrat;font-size:2.8222px;line-height:1.25;stroke-width:.26458;text-align:center;text-anchor:middle" xml:space="preserve"><tspan x="35.300549" y="217.43085" style="font-size:2.8222px;stroke-width:.26458;text-align:center;text-anchor:middle">Внутренняя женщина (что?)</tspan></text>
+		<circle cx="154.93" cy="281.78" r="2.6458" style="fill:#ff6347;stop-color:#000000"/>
+		<text x="137.22751" y="180.49345" style="font-family:Montserrat;font-size:3.5278px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="137.22751" y="180.49345" style="font-family:Montserrat;font-weight:bold;stroke-width:.26458">ЗОНА КОМФОРТА</tspan></text>
+		<path d="m163.45 184.57c-0.84491 0.84809-0.84361 2.2201 4e-3 3.0666l4e-3 4e-3 3.0667 2.5813 3.0695-2.5842c0.84762-0.84763 0.84762-2.2219 0-3.0695-0.84763-0.84763-2.2219-0.84764-3.0695-1e-5 -0.84764-0.84763-2.2219-0.84762-3.0695 1e-5l-4e-3 4e-3z" style="fill:#ff6347;stop-color:#000000"/>
+		<text x="185.54337" y="168.65306" style="fill:#008000;font-family:Montserrat;font-size:6.35px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="185.54337" y="168.65306" style="fill:#008000;font-family:Montserrat;font-size:6.35px;font-weight:bold;stroke-width:.26458">$</tspan></text>
+		<circle cx="154.93" cy="65.473" r="8.599" style="fill:#4682b4;stop-color:#000000"/>
+		<circle cx="154.93" cy="65.473" r="8.0426" style="fill:none;stop-color:#000000;stroke-width:.42995;stroke:#fff"/>
+		<circle transform="matrix(.81243 0 0 .81243 136.65 -23.61)" cx="132.29" cy="219.49" r="10.583" style="fill:#1a1a1a;filter:url(#a);stop-color:#000000"/>
+		<circle transform="matrix(.81243 0 0 .81243 136.65 -23.61)" cx="132.29" cy="219.49" r="10.054" style="fill:#fff;filter:url(#a);stop-color:#000000"/>
+		<circle cx="117.54" cy="154.71" r="5.9531" style="fill:#00fa9a;stop-color:#000000"/>
+		<circle cx="117.54" cy="154.71" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<circle cx="281.83" cy="154.84" r="2.6458" style="fill:#ff6347;stop-color:#000000"/>
+		<circle cx="154.93" cy="27.77" r="2.6458" style="fill:#c71585;stop-color:#000000"/>
+		<circle cx="27.899" cy="154.57" r="2.6458" style="fill:#c71585;stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx=".13209" cy="345.95" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx="127.03" cy="219.01" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx=".1322" cy="91.942" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx="-126.9" cy="218.74" r="2.6458" style="stop-color:#000000"/>
+		<circle cx="154.93" cy="220.93" r="2.6458" style="fill:#ff7f24;stop-color:#000000"/>
+		<circle cx="220.98" cy="154.71" r="2.6458" style="fill:#ff7f24;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="263.85" cy=".090981" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="263.85" cy=".090969" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx=".21212" cy="255.26" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="275.12" cy="15.359" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="275.12" cy="15.359" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx="-15.055" cy="266.52" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="275.06" cy="-16.547" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="275.06" cy="-16.547" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx="16.85" cy="266.47" r="2.6458" style="stop-color:#000000"/>
+		<text x="26.816389" y="155.55711" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="26.816389" y="155.55711" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">A</tspan></text>
+		<text x="64.095978" y="65.90715" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="64.095978" y="65.90715" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Е</tspan></text>
+		<text x="153.82008" y="28.757643" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="153.82008" y="28.757643" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Б</tspan></text>
+		<text x="243.16504" y="66.032562" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="243.16504" y="66.032562" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Ж</tspan></text>
+		<text x="280.71179" y="155.82948" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="280.71179" y="155.82948" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">В</tspan></text>
+		<text x="243.56091" y="245.52042" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="243.56091" y="245.52042" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">И</tspan></text>
+		<text x="153.99072" y="282.76901" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="153.99072" y="282.76901" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Г</tspan></text>
+		<text x="64.038254" y="245.39929" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="64.038254" y="245.39929" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">З</tspan></text>
+		<circle cx="154.97" cy="171.45" r="2.6458" style="fill:#f8d900;stop-color:#000000"/>
+		<text x="153.80338" y="172.23019" style="fill:#000000;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="153.80338" y="172.23019" style="fill:#000000;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Д</tspan></text>
+		<text x="219.83023" y="155.69719" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="219.83023" y="155.69719" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">П</tspan></text>
+		<text x="199.15007" y="177.39058" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="199.15007" y="177.39058" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">О</tspan></text>
+		<text x="179.28813" y="181.33484" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="179.28813" y="181.33484" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">М</tspan></text>
+		<text x="176.6635" y="200.09436" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="176.6635" y="200.09436" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Н</tspan></text>
+		<text x="153.79176" y="221.91641" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="153.79176" y="221.91641" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">К</tspan></text>
+		<circle cx="154.61" cy="117.8" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+	</g>
+</svg>

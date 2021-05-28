@@ -1,0 +1,250 @@
+<svg width="1150" height="1e3" version="1.1" viewBox="0 0 304.27 264.58" xmlns="http://www.w3.org/2000/svg">
+	<g transform="translate(-4.3495 -22.484)">
+		<path transform="matrix(.71687 0 0 .71712 24.892 24.718)" d="m303.96 303.82-122.56 50.765-122.56-50.765-50.765-122.56 50.765-122.56 122.56-50.765 122.56 50.765 50.765 122.56z" style="fill:none;stop-color:#000000;stroke-width:.73803;stroke:#000"/>
+		<path d="m154.93 30.416-87.857 36.405-36.392 87.889h248.5l-36.392-87.889z" style="fill:#fffaf0;stop-color:#000000"/>
+		<path d="m154.97 279-87.857-36.405-36.392-87.889h248.5l-36.392 87.889z" style="fill:#d3d3d3;stop-color:#000000"/>
+		<path d="m154.97 218.28 63.364-63.574" style="fill:none;stroke-dasharray:2.38125, 2.38125;stroke-opacity:.49815;stroke-width:.79375;stroke:#000"/>
+		<path d="m84.105 154.71 140.56-1e-5" style="fill:none;stroke-opacity:.75;stroke-width:.28383px;stroke:#000"/>
+		<path d="m115.53 109.9-9.1439-3.7393 3.7432 9.14 2.2584-2.2584 83.616 83.624-2.2584 2.2584 9.7424 4.3382-4.3418-9.7388-2.2585 2.2584-41.509-41.512-42.107-42.111z" style="fill:#4682b4;stop-color:#000000"/>
+		<path d="m154.97 80.53 1e-5 144.32" style="fill:none;stroke-opacity:.75;stroke-width:.2876px;stroke:#000"/>
+		<rect x="76.458" y="76.18" width="156.95" height="157.06" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#000"/>
+		<path d="m194.34 109.9 9.1439-3.7393-3.7432 9.14-2.2584-2.2584-42.107 42.111-41.509 41.512 2.2584 2.2584-9.7424 4.3382 4.3417-9.7388 2.2585 2.2584 83.616-83.624z" style="fill:#ff6347;stop-color:#000000"/>
+		<path d="m30.685 154.71 36.391-87.889" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle cx="41.602" cy="128.34" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="48.881" cy="110.76" r="1.3903" style="stop-color:#000000"/>
+		<circle cx="59.798" cy="84.398" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="52.52" cy="101.98" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="56.159" cy="93.187" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(49)" cx="128.4" cy="61.315" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="45.241" cy="119.55" r="1.0583" style="stop-color:#000000"/>
+		<rect transform="rotate(45)" x="140.48" y="-78.688" width="156.95" height="157.06" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#000"/>
+		<path d="m279.18 154.71-36.391-87.889" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle transform="scale(-1,1)" cx="-268.26" cy="128.34" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-260.99" cy="110.76" r="1.3903" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-250.07" cy="84.398" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-257.35" cy="101.98" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-253.71" cy="93.187" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-271.9" cy="137.13" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-264.63" cy="119.55" r="1.0583" style="stop-color:#000000"/>
+		<path d="m242.79 242.6 36.391-87.889" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle cx="253.71" cy="216.23" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="260.99" cy="198.65" r="1.3903" style="stop-color:#000000"/>
+		<circle cx="271.9" cy="172.29" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="264.63" cy="189.86" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="268.26" cy="181.08" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="250.07" cy="225.02" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="257.35" cy="207.44" r="1.0583" style="stop-color:#000000"/>
+		<path d="m67.076 242.6-36.391-87.889" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle transform="scale(-1,1)" cx="-56.159" cy="216.23" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-48.88" cy="198.65" r="1.3903" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-37.963" cy="172.29" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-45.241" cy="189.86" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-41.602" cy="181.08" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-59.798" cy="225.02" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="scale(-1,1)" cx="-52.52" cy="207.44" r="1.0583" style="stop-color:#000000"/>
+		<path d="m67.061 242.6 87.889 36.391" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle transform="rotate(90)" cx="253.52" cy="-93.427" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="260.8" cy="-111" r="1.3903" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="271.72" cy="-137.37" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="264.44" cy="-119.79" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="268.08" cy="-128.58" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="249.88" cy="-84.638" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="257.16" cy="-102.22" r="1.0583" style="stop-color:#000000"/>
+		<path d="m242.81 242.6-87.889 36.391" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="253.52" cy="216.44" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="260.8" cy="198.86" r="1.3903" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="271.72" cy="172.5" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="264.44" cy="190.07" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="268.08" cy="181.28" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="249.88" cy="225.23" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="257.16" cy="207.65" r="1.0583" style="stop-color:#000000"/>
+		<path d="m154.92 30.422 87.889 36.391" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle transform="rotate(90)" cx="41.34" cy="-181.28" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="48.618" cy="-198.86" r="1.3903" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="59.536" cy="-225.23" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="52.257" cy="-207.65" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="55.897" cy="-216.44" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="37.701" cy="-172.5" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(90)" cx="44.979" cy="-190.07" r="1.0583" style="stop-color:#000000"/>
+		<path d="m154.95 30.422-87.889 36.391" style="fill:none;stroke-width:.39688;stroke:#000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="41.34" cy="128.58" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="48.618" cy="111" r="1.3903" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="59.536" cy="84.638" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="52.257" cy="102.22" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="55.896" cy="93.427" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="37.701" cy="137.37" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="matrix(0,1,1,0,0,0)" cx="44.979" cy="119.79" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="154.93" cy="265.91" r="13.229" style="fill:#ff6347;stop-color:#000000"/>
+		<circle cx="154.93" cy="43.645" r="13.229" style="fill:#c71585;stop-color:#000000"/>
+		<circle cx="265.95" cy="154.84" r="13.229" style="fill:#ff6347;stop-color:#000000"/>
+		<circle cx="43.774" cy="154.57" r="13.229" style="fill:#c71585;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="110.91" r="13.229" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="-111.22" r="13.229" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="329.97" cy="-.15836" r="13.229" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="107.93" cy="-.15836" r="13.229" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle cx="154.93" cy="155.57" r="13.229" style="fill:#f8d900;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="110.91" r="12.7" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="-111.22" r="12.7" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="329.97" cy="-.15836" r="12.7" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="107.93" cy="-.15836" r="12.7" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="matrix(.81243 0 0 .81243 47.456 65.76)" cx="132.29" cy="219.49" r="10.583" style="fill:#1a1a1a;filter:url(#f);stop-color:#000000"/>
+		<circle transform="matrix(.81243 0 0 .81243 47.456 65.76)" cx="132.29" cy="219.49" r="10.054" style="fill:#fff;filter:url(#f);stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="144.31" cy="-.15836" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="144.31" cy="-.15836" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="-75.274" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="-75.274" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<ellipse cx="43.774" cy="154.57" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#fff"/>
+		<ellipse cx="154.93" cy="155.57" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-opacity:.9948;stroke-width:.52917;stroke:#fff"/>
+		<ellipse cx="154.93" cy="43.615" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#fff"/>
+		<ellipse cx="265.95" cy="154.84" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#fff"/>
+		<ellipse cx="154.93" cy="265.91" rx="12.451" ry="12.451" style="fill:none;stop-color:#000000;stroke-width:.52917;stroke:#fff"/>
+		<circle cx="65.601" cy="154.71" r="8.599" style="fill:#4682b4;stop-color:#000000"/>
+		<circle cx="65.601" cy="154.71" r="8.0426" style="fill:none;stop-color:#000000;stroke-width:.42995;stroke:#fff"/>
+		<circle cx="154.93" cy="80.025" r="5.9531" style="fill:#00ced1;stop-color:#000000"/>
+		<circle cx="154.93" cy="80.025" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<circle cx="80.153" cy="154.71" r="5.9531" style="fill:#00ced1;stop-color:#000000"/>
+		<circle cx="80.153" cy="154.71" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<circle cx="154.61" cy="117.8" r="5.9531" style="fill:#00fa9a;stop-color:#000000"/>
+		<circle cx="229.58" cy="154.71" r="5.9531" style="fill:#ff7f24;stop-color:#000000"/>
+		<circle cx="229.58" cy="154.71" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<circle cx="154.93" cy="229.53" r="5.9531" style="fill:#ff7f24;stop-color:#000000"/>
+		<circle cx="154.93" cy="229.53" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<text transform="rotate(45)" x="182.96863" y="-1.6113183" style="font-family:Montserrat;font-size:2.8222px;line-height:1.25;stroke-width:.26458;text-align:center;text-anchor:middle" xml:space="preserve"><tspan x="182.96863" y="-1.6113183" style="font-size:2.8222px;stroke-width:.26458;text-align:center;text-anchor:middle">Внутренний мужчина (как?)</tspan></text>
+		<text transform="rotate(-45)" x="35.300549" y="217.43085" style="font-family:Montserrat;font-size:2.8222px;line-height:1.25;stroke-width:.26458;text-align:center;text-anchor:middle" xml:space="preserve"><tspan x="35.300549" y="217.43085" style="font-size:2.8222px;stroke-width:.26458;text-align:center;text-anchor:middle">Внутренняя женщина (что?)</tspan></text>
+		<circle cx="154.93" cy="281.78" r="2.6458" style="fill:#ff6347;stop-color:#000000"/>
+		<text x="137.22751" y="180.49345" style="font-family:Montserrat;font-size:3.5278px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="137.22751" y="180.49345" style="font-family:Montserrat;font-weight:bold;stroke-width:.26458">ЗОНА КОМФОРТА</tspan></text>
+		<path d="m163.45 184.57c-0.84491 0.84809-0.84361 2.2201 4e-3 3.0666l4e-3 4e-3 3.0667 2.5813 3.0695-2.5842c0.84762-0.84763 0.84762-2.2219 0-3.0695-0.84763-0.84763-2.2219-0.84764-3.0695-1e-5 -0.84764-0.84763-2.2219-0.84762-3.0695 1e-5l-4e-3 4e-3z" style="fill:#ff6347;stop-color:#000000"/>
+		<text x="185.54337" y="168.65306" style="fill:#008000;font-family:Montserrat;font-size:6.35px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="185.54337" y="168.65306" style="fill:#008000;font-family:Montserrat;font-size:6.35px;font-weight:bold;stroke-width:.26458">$</tspan></text>
+		<circle cx="154.93" cy="65.473" r="8.599" style="fill:#4682b4;stop-color:#000000"/>
+		<circle cx="154.93" cy="65.473" r="8.0426" style="fill:none;stop-color:#000000;stroke-width:.42995;stroke:#fff"/>
+		<circle transform="matrix(.81243 0 0 .81243 136.65 -23.61)" cx="132.29" cy="219.49" r="10.583" style="fill:#1a1a1a;filter:url(#c);stop-color:#000000"/>
+		<circle transform="matrix(.81243 0 0 .81243 136.65 -23.61)" cx="132.29" cy="219.49" r="10.054" style="fill:#fff;filter:url(#c);stop-color:#000000"/>
+		<circle transform="matrix(.57447 -.57447 .57447 .57447 15.971 167.78)" cx="132.29" cy="219.49" r="10.583" style="fill:#1a1a1a;filter:url(#d);stop-color:#000000"/>
+		<circle transform="matrix(.57447 -.57447 .57447 .57447 15.971 167.78)" cx="132.29" cy="219.49" r="10.054" style="fill:#fff;filter:url(#d);stop-color:#000000"/>
+		<circle transform="matrix(.57447 -.57447 .57447 .57447 16.249 41.213)" cx="132.29" cy="219.49" r="10.583" style="fill:#1a1a1a;filter:url(#b);stop-color:#000000"/>
+		<circle transform="matrix(.57447 -.57447 .57447 .57447 16.249 41.213)" cx="132.29" cy="219.49" r="10.054" style="fill:#fff;filter:url(#b);stop-color:#000000"/>
+		<circle transform="matrix(-.57447 .57447 -.57447 -.57447 293.95 141.73)" cx="132.29" cy="219.49" r="10.583" style="fill:#1a1a1a;filter:url(#e);stop-color:#000000"/>
+		<circle transform="matrix(-.57447 .57447 -.57447 -.57447 293.95 141.73)" cx="132.29" cy="219.49" r="10.054" style="fill:#fff;filter:url(#e);stop-color:#000000"/>
+		<circle transform="matrix(-.57447 .57447 -.57447 -.57447 293.92 267.9)" cx="132.29" cy="219.49" r="10.583" style="fill:#1a1a1a;filter:url(#a);stop-color:#000000"/>
+		<circle transform="matrix(-.57447 .57447 -.57447 -.57447 293.92 267.9)" cx="132.29" cy="219.49" r="10.054" style="fill:#fff;filter:url(#a);stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="74.527" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="218.95" cy="74.527" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="293.7" cy="-.13173" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="293.7" cy="-.13174" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle cx="117.54" cy="154.71" r="5.9531" style="fill:#00fa9a;stop-color:#000000"/>
+		<circle cx="117.54" cy="154.71" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+		<circle cx="281.83" cy="154.84" r="2.6458" style="fill:#ff6347;stop-color:#000000"/>
+		<circle cx="154.93" cy="27.77" r="2.6458" style="fill:#c71585;stop-color:#000000"/>
+		<circle cx="27.899" cy="154.57" r="2.6458" style="fill:#c71585;stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx=".13209" cy="345.95" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx="127.03" cy="219.01" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx=".1322" cy="91.942" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx="-126.9" cy="218.74" r="2.6458" style="stop-color:#000000"/>
+		<circle cx="154.93" cy="220.93" r="2.6458" style="fill:#ff7f24;stop-color:#000000"/>
+		<circle cx="220.98" cy="154.71" r="2.6458" style="fill:#ff7f24;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="263.85" cy=".090981" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="263.85" cy=".090969" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx=".21212" cy="255.26" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="275.12" cy="15.359" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="275.12" cy="15.359" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx="-15.055" cy="266.52" r="2.6458" style="stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="275.06" cy="-16.547" r="5.9531" style="fill:#1a1a1a;stop-color:#000000"/>
+		<circle transform="rotate(45)" cx="275.06" cy="-16.547" r="5.5563" style="fill:#fff;stop-color:#000000"/>
+		<circle transform="rotate(-45)" cx="16.85" cy="266.47" r="2.6458" style="stop-color:#000000"/>
+		<text x="26.816389" y="155.55711" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="26.816389" y="155.55711" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">A</tspan></text>
+		<text x="64.095978" y="65.90715" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="64.095978" y="65.90715" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Е</tspan></text>
+		<text x="153.82008" y="28.757643" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="153.82008" y="28.757643" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Б</tspan></text>
+		<text x="243.16504" y="66.032562" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="243.16504" y="66.032562" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Ж</tspan></text>
+		<text x="280.71179" y="155.82948" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="280.71179" y="155.82948" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">В</tspan></text>
+		<text x="243.56091" y="245.52042" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="243.56091" y="245.52042" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">И</tspan></text>
+		<text x="153.99072" y="282.76901" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="153.99072" y="282.76901" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Г</tspan></text>
+		<text x="64.038254" y="245.39929" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="64.038254" y="245.39929" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">З</tspan></text>
+		<circle cx="154.97" cy="171.45" r="2.6458" style="fill:#f8d900;stop-color:#000000"/>
+		<text x="153.80338" y="172.23019" style="fill:#000000;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="153.80338" y="172.23019" style="fill:#000000;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Д</tspan></text>
+		<text x="219.83023" y="155.69719" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="219.83023" y="155.69719" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">П</tspan></text>
+		<text x="199.15007" y="177.39058" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="199.15007" y="177.39058" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">О</tspan></text>
+		<text x="179.28813" y="181.33484" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="179.28813" y="181.33484" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">М</tspan></text>
+		<text x="176.6635" y="200.09436" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="176.6635" y="200.09436" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">Н</tspan></text>
+		<text x="153.79176" y="221.91641" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="153.79176" y="221.91641" style="fill:#ffffff;font-family:Montserrat;font-size:2.8222px;font-weight:bold;stroke-width:.26458">К</tspan></text>
+		<text transform="rotate(22.5)" x="90.461334" y="112.53206" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.461334" y="112.53206" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">1-2</tspan></text>
+		<circle cx="41.602" cy="128.34" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="48.881" cy="110.76" r="1.3903" style="stop-color:#000000"/>
+		<circle cx="59.798" cy="84.398" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="52.52" cy="101.98" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="56.159" cy="93.187" r="1.0583" style="stop-color:#000000"/>
+		<circle transform="rotate(49)" cx="128.4" cy="61.315" r="1.0583" style="stop-color:#000000"/>
+		<circle cx="45.241" cy="119.55" r="1.0583" style="stop-color:#000000"/>
+		<text transform="rotate(22.5)" x="90.173737" y="103.71097" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.173737" y="103.71097" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">2-3</tspan></text>
+		<text transform="rotate(22.5)" x="90.172516" y="94.198471" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.172516" y="94.198471" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">3-4</tspan></text>
+		<text transform="rotate(22.5)" x="90.170082" y="75.1735" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.170082" y="75.1735" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">6-7</tspan></text>
+		<text transform="rotate(22.5)" x="90.168861" y="65.804939" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.168861" y="65.804939" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">7-8</tspan></text>
+		<text transform="rotate(22.5)" x="90.859039" y="56.578835" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.859039" y="56.578835" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">8-9</tspan></text>
+		<text transform="rotate(22.5)" x="90.495872" y="85.134735" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.495872" y="85.134735" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">5 лет</tspan></text>
+		<text transform="rotate(-22.5)" x="187.04187" y="184.39218" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="187.04187" y="184.39218" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">32-33</tspan></text>
+		<text transform="rotate(-22.5)" x="187.21667" y="175.85748" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="187.21667" y="175.85748" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">31-32</tspan></text>
+		<text transform="rotate(-22.5)" x="181.35506" y="203.67117" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="181.35506" y="203.67117" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">35 лет</tspan></text>
+		<text transform="rotate(-22.5)" x="187.04309" y="193.90468" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="187.04309" y="193.90468" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">33-34</tspan></text>
+		<text transform="rotate(-22.5)" x="187.04552" y="212.74762" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="187.04552" y="212.74762" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">36-37</tspan></text>
+		<text transform="rotate(-22.5)" x="187.04674" y="222.26012" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="187.04674" y="222.26012" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">37-38</tspan></text>
+		<text transform="rotate(-22.5)" x="186.76157" y="231.08122" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="186.76157" y="231.08122" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">38-39</tspan></text>
+		<text transform="rotate(22.5)" x="305.44867" y="65.834328" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.44867" y="65.834328" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">42-43</tspan></text>
+		<text transform="rotate(22.5)" x="305.7421" y="57.013222" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.7421" y="57.013222" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">41-42</tspan></text>
+		<text transform="rotate(22.5)" x="299.76184" y="85.113304" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="299.76184" y="85.113304" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">45 лет</tspan></text>
+		<text transform="rotate(22.5)" x="305.44989" y="75.346817" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.44989" y="75.346817" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">43-44</tspan></text>
+		<text transform="rotate(22.5)" x="305.4523" y="94.189758" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.4523" y="94.189758" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">46-47</tspan></text>
+		<text transform="rotate(22.5)" x="305.45352" y="103.70225" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.45352" y="103.70225" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">47-48</tspan></text>
+		<text transform="rotate(22.5)" x="305.74112" y="112.52335" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.74112" y="112.52335" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">48-49</tspan></text>
+		<text transform="rotate(-22.5)" x="-28.035194" y="231.34616" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-28.035194" y="231.34616" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">71-72</tspan></text>
+		<text transform="rotate(-22.5)" x="-28.238911" y="222.32256" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-28.238911" y="222.32256" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">72-73</tspan></text>
+		<text transform="rotate(-22.5)" x="-28.240131" y="212.81007" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-28.240131" y="212.81007" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">73-74</tspan></text>
+		<text transform="rotate(-22.5)" x="-28.242565" y="193.7851" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-28.242565" y="193.7851" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">76-77</tspan></text>
+		<text transform="rotate(-22.5)" x="-28.243786" y="184.41653" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-28.243786" y="184.41653" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">77-78</tspan></text>
+		<text transform="rotate(-22.5)" x="-27.958614" y="175.59544" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-27.958614" y="175.59544" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">78-79</tspan></text>
+		<text transform="rotate(-22.5)" x="-27.916775" y="203.74634" style="fill:#000000;font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-27.916775" y="203.74634" style="fill:#000000;font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">75 лет</tspan></text>
+		<text transform="rotate(-67.5)" x="-195.64177" y="231.46748" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-195.64177" y="231.46748" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">61-62</tspan></text>
+		<text transform="rotate(-67.5)" x="-195.84549" y="222.44388" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-195.84549" y="222.44388" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">62-62</tspan></text>
+		<text transform="rotate(-67.5)" x="-195.84671" y="212.93138" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-195.84671" y="212.93138" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">63-64</tspan></text>
+		<text transform="rotate(-67.5)" x="-195.84914" y="193.90642" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-195.84914" y="193.90642" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">66-67</tspan></text>
+		<text transform="rotate(-67.5)" x="-195.85036" y="184.53784" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-195.85036" y="184.53784" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">67-68</tspan></text>
+		<text transform="rotate(-67.5)" x="-195.56519" y="175.71675" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-195.56519" y="175.71675" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">68-69</tspan></text>
+		<text transform="rotate(-67.5)" x="-195.52335" y="203.86766" style="fill:#000000;font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="-195.52335" y="203.86766" style="fill:#000000;font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">65 лет</tspan></text>
+		<text transform="rotate(67.5)" x="305.35666" y="-101.74322" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.35666" y="-101.74322" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">52-53</tspan></text>
+		<text transform="rotate(67.5)" x="305.65009" y="-110.56431" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.65009" y="-110.56431" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">51-52</tspan></text>
+		<text transform="rotate(67.5)" x="299.66983" y="-82.464226" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="299.66983" y="-82.464226" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">55 лет</tspan></text>
+		<text transform="rotate(67.5)" x="305.35788" y="-92.230721" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.35788" y="-92.230721" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">53-54</tspan></text>
+		<text transform="rotate(67.5)" x="305.36029" y="-73.387772" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.36029" y="-73.387772" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">56-57</tspan></text>
+		<text transform="rotate(67.5)" x="305.36151" y="-63.875278" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.36151" y="-63.875278" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">57-58</tspan></text>
+		<text transform="rotate(67.5)" x="305.64911" y="-55.054173" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="305.64911" y="-55.054173" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">58-59</tspan></text>
+		<text transform="rotate(-67.5)" x="19.491076" y="184.50725" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="19.491076" y="184.50725" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">22-23</tspan></text>
+		<text transform="rotate(-67.5)" x="19.784502" y="175.68614" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="19.784502" y="175.68614" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">21-22</tspan></text>
+		<text transform="rotate(-67.5)" x="13.804248" y="203.78624" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="13.804248" y="203.78624" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">25 лет</tspan></text>
+		<text transform="rotate(-67.5)" x="19.492296" y="194.01976" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="19.492296" y="194.01976" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">23-24</tspan></text>
+		<text transform="rotate(-67.5)" x="19.494707" y="212.86269" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="19.494707" y="212.86269" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">26-27</tspan></text>
+		<text transform="rotate(-67.5)" x="19.495928" y="222.37517" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="19.495928" y="222.37517" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">27-28</tspan></text>
+		<text transform="rotate(-67.5)" x="19.783525" y="231.1963" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="19.783525" y="231.1963" style="font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">28-29</tspan></text>
+		<text transform="rotate(67.5)" x="90.223785" y="-54.841553" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.223785" y="-54.841553" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">11-12</tspan></text>
+		<text transform="rotate(67.5)" x="90.020073" y="-63.865158" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.020073" y="-63.865158" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">12-13</tspan></text>
+		<text transform="rotate(67.5)" x="90.018852" y="-73.37764" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.018852" y="-73.37764" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">13-14</tspan></text>
+		<text transform="rotate(67.5)" x="90.016418" y="-92.402626" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.016418" y="-92.402626" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">16-17</tspan></text>
+		<text transform="rotate(67.5)" x="90.015198" y="-101.77119" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.015198" y="-101.77119" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">17-18</tspan></text>
+		<text transform="rotate(67.5)" x="90.300369" y="-110.59228" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.300369" y="-110.59228" style="fill:#000000;font-family:Montserrat;font-size:3.175px;font-weight:bold;stroke-width:.26458">18-19</tspan></text>
+		<text transform="rotate(67.5)" x="90.342209" y="-82.441383" style="fill:#000000;font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="90.342209" y="-82.441383" style="fill:#000000;font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">15 лет</tspan></text>
+		<path d="m21.284 153.96-1.8433 0.60513 1.8433 0.60513v-0.34055h3.9688v-0.52917h-3.9688z" style="fill:#c71585;stop-color:#000000"/>
+		<path d="m148.32 281.18-1.8433 0.60513 1.8433 0.60513v-0.34055h3.9688v-0.52917h-3.9688z" style="fill:#ff6347;stop-color:#000000"/>
+		<path d="m288.44 154.24 1.8433 0.60513-1.8433 0.60513v-0.34055h-3.9688v-0.52917h3.9688z" style="fill:#ff6347;stop-color:#000000"/>
+		<path d="m161.55 27.165 1.8433 0.60513-1.8433 0.60513v-0.34055h-3.9688v-0.52917h3.9688z" style="fill:#c71585;stop-color:#000000"/>
+		<text x="6.9123149" y="156.0256" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="6.9123149" y="156.0256" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">0 лет</tspan></text>
+		<text x="291.21124" y="156.32336" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="291.21124" y="156.32336" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">40 лет</tspan></text>
+		<text x="164.3092" y="29.25153" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="164.3092" y="29.25153" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">20 лет</tspan></text>
+		<text x="130.75136" y="283.26291" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="130.75136" y="283.26291" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">60 лет</tspan></text>
+		<path d="m58.326 243.8-1.8433 0.60513 1.8433 0.60513v-0.34055h3.9688v-0.52917h-3.9688z" style="stop-color:#000000"/>
+		<text x="40.756752" y="245.88893" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="40.756752" y="245.88893" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">70 лет</tspan></text>
+		<path d="m58.492 64.314-1.8433 0.60513 1.8433 0.60513v-0.34055h3.9688v-0.52917h-3.9688z" style="stop-color:#000000"/>
+		<text x="40.923439" y="66.401047" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="40.923439" y="66.401047" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">10 лет</tspan></text>
+		<path d="m251.3 64.44 1.8433 0.60513-1.8433 0.60513v-0.34055h-3.9688v-0.52917h3.9688z" style="stop-color:#000000"/>
+		<text x="254.06339" y="66.526451" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="254.06339" y="66.526451" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">30 лет</tspan></text>
+		<path d="m251.33 243.93 1.8433 0.60513-1.8433 0.60513v-0.34055h-3.9688v-0.52917h3.9688z" style="stop-color:#000000"/>
+		<text x="254.09518" y="246.01428" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;line-height:1.25;stroke-width:.26458" xml:space="preserve"><tspan x="254.09518" y="246.01428" style="font-family:Montserrat;font-size:4.2333px;font-weight:bold;stroke-width:.26458">50 лет</tspan></text>
+		<circle cx="154.61" cy="117.8" r="5.4703" style="fill:none;stop-color:#000000;stroke-width:.39688;stroke:#fff"/>
+	</g>
+</svg>
