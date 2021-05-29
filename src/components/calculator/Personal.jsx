@@ -1,7 +1,7 @@
 import React from 'react';
 import { PersonalMatrix } from './controls/PersonalMatrix';
-import { CompatibilityMatrix } from './controls/CompatibilityMatrix';
 import { Navigator } from './controls/Navigator';
+import { BirthdatePicker } from './controls/BirthdatePicker';
 
 export const Personal = () => {
 	const personalValues = [];
@@ -17,6 +17,9 @@ export const Personal = () => {
 			<div className="row">
 				<div className="col-6">
 					<PersonalMatrix values={personalValues}/>
+				</div>
+				<div className="col-6">
+					<BirthdatePicker/>
 				</div>
 				<div className="col-12">
 					<Navigator values={personalValues}/>
