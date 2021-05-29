@@ -31,8 +31,8 @@ export const BirthdatePicker = ({onChangeValue}) => {
 
 	return (
 		<div className="row">
-			<div className="col-12 mt-3">
-				<h5>Дата рождения:</h5>
+			<div className="col-12 mt-3 text-center">
+				<h5>Дата рождения</h5>
 			</div>
 			<div className="col-4">
 				<input type="text" className="form-control" value={date}

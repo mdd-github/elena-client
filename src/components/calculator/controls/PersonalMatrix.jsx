@@ -6,9 +6,6 @@ export const PersonalMatrix = (props) => {
 		<>
 			<div className="row">
 				<div className="col-12 mt-3">
-					<h5>Матрица:</h5>
-				</div>
-				<div className="col-12 mt-3">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 304.27 264.58">
 						<image width="100%" height="100%" xlinkHref={pBackgroundSvg}/>
 						<text x="150.329" y="97.575" fill="#fff" fontSize="6.35" fontWeight="bold" textAnchor="middle">

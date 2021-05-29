@@ -1,0 +1,48 @@
+
+.parameter {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  height: 100%;
+  display: flex;
+
+  &_Title {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  &_Description {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  &_Value {
+    &:before {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      content: '';
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 2px solid #000;
+      border-radius: 50%;
+    }
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+  }
+
+  &_Name {
+    font-size: 0.9rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  &_Bracket {
+    font-size: 5rem;
+  }
+}

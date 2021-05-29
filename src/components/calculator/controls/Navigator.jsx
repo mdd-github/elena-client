@@ -5,8 +5,8 @@ export const Navigator = (props) => {
 	return (
 		<>
 			<div className="row">
-				<div className="col-12 mt-3">
-					<h5>Навигатор:</h5>
+				<div className="col-12 mt-3 text-center">
+					<h5>Навигатор</h5>
 				</div>
 				<div className="col-12 mt-3">
 					<div className="table-responsive-md">
