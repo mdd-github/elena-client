@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-export const BirthdatePicker = (props) => {
+export const BirthdatePicker = ({onChangeValue}) => {
 	const [value, setValue] = useState(new Date());
 	const [year, setYear] = useState(value.getFullYear());
 	const [month, setMonth] = useState(value.getMonth());
@@ -27,10 +27,12 @@ export const BirthdatePicker = (props) => {
 		setValue(newValue);
 	};
 
+	useEffect(() => onChangeValue(value), [onChangeValue, value]);
+
 	return (
 		<div className="row">
-			<div className="col-12">
-				<h5>Дата рождения: {value.toString()}</h5>
+			<div className="col-12 mt-3">
+				<h5>Дата рождения:</h5>
 			</div>
 			<div className="col-4">
 				<input type="text" className="form-control" value={date}

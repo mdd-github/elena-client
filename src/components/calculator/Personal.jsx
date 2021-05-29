@@ -10,16 +10,27 @@ export const Personal = () => {
 		personalValues.push(Math.floor(Math.random() * 25));
 	}
 
+	const changeBirthdate = (e) => {
+		console.log(e);
+	}
+
 	return (
 		<div className="container">
-			<h1>Personal</h1>
+
+			<div className="row">
+				<div className="col-12">
+					<div className="mt-5">
+						<h1>Персональный расчёт</h1>
+					</div>
+				</div>
+			</div>
 
 			<div className="row">
 				<div className="col-6">
 					<PersonalMatrix values={personalValues}/>
 				</div>
 				<div className="col-6">
-					<BirthdatePicker/>
+					<BirthdatePicker onChangeValue={changeBirthdate}/>
 				</div>
 				<div className="col-12">
 					<Navigator values={personalValues}/>
