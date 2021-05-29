@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PersonalMatrix } from './controls/PersonalMatrix';
 import { Navigator } from './controls/Navigator';
 import { BirthdatePicker } from './controls/BirthdatePicker';
 import { AdditionalTable } from './controls/AdditionalTable';
 import { SingleParameter } from './controls/SingleParameter';
 import { DoubleParameter } from './controls/DoubleParameter';
+import { useDispatch, useSelector } from 'react-redux';
+import { personalSetDate } from '../../store/personal/actions';
 
 const calculateAge = (date) => {
 	const today = new Date();
@@ -21,7 +23,8 @@ const calculateAge = (date) => {
 };
 
 export const Personal = () => {
-	const personalValues = [];
+	const dispatch = useDispatch();
+	const personalValues = useSelector(state => state.personal.matrixValues);
 	const [birthday, setBirthday] = useState(new Date());
 	const [age, setAge] = useState(calculateAge(birthday));
 
@@ -34,12 +37,17 @@ export const Personal = () => {
 		setAge(calculateAge(date));
 	};
 
+	useEffect(() => {
+		dispatch(personalSetDate(birthday));
+	}, [birthday, dispatch]);
+
+
 	return (
 		<div className="container">
 
 			<div className="row">
 				<div className="col-12">
-					<div className="mt-5">
+					<div className="mt-5 text-center">
 						<h1>Персональный расчёт</h1>
 					</div>
 				</div>
