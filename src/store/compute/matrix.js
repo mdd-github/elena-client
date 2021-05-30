@@ -94,3 +94,56 @@ export const computeMatrix = (date) => {
 	values[85] = add(values[0] + values[84]);
 	return values;
 }
+
+export const computeShortMatrix = (date) => {
+	const d = date.getDate();
+	const y = date.getFullYear();
+	const m = date.getMonth() + 1;
+
+	const values = [];
+	values[0] = add(d);
+	values[2] = add(m);
+	values[4] = add(y);
+	values[6] = add(values[0] + values[2] + values[4]);
+	values[1] = add(values[0] + values[2]);
+	values[3] = add(values[2] + values[4]);
+	values[5] = add(values[4] + values[6]);
+	values[7] = add(values[6] + values[0]);
+	values[8] = add(values[0] + values[2] + values[4]+ values[6]);
+	return values;
+}
+
+export const composeMatrix = (date1, date2) => {
+	const m1 = computeShortMatrix(date1);
+	const m2 = computeShortMatrix(date2);
+
+	const result = [];
+	result[0] = add(m1[0] + m2[0]);
+	result[1] = add(m1[1] + m2[1]);
+	result[2] = add(m1[2] + m2[2]);
+	result[3] = add(m1[3] + m2[3]);
+	result[4] = add(m1[4] + m2[4]);
+	result[5] = add(m1[5] + m2[5]);
+	result[6] = add(m1[6] + m2[6]);
+	result[7] = add(m1[7] + m2[7]);
+	result[20] = add(m1[8] + m2[8]);
+
+	result[12] = add(result[0] + result[20]);
+	result[18] = add(result[20] + result[12]);
+	result[8] = add(result[12] + result[0]);
+
+	result[13] = add(result[2] + result[20]);
+	result[19] = add(result[20] + result[13]);
+	result[9] = add(result[13] + result[2]);
+
+	result[14] = add(result[4] + result[20]);
+	result[10] = add(result[14] + result[4]);
+
+	result[22] = add(result[6] + result[20]);
+	result[11] = add(result[22] + result[6]);
+
+	result[16] = add(result[14] + result[22]);
+	result[17] = add(result[16] + result[22]);
+	result[15] = add(result[16] + result[14]);
+	return result;
+}

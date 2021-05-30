@@ -18,6 +18,12 @@ const initialState = {
 	socializationValues2: [],
 	innerPointValue2: 0,
 	planetaryValues2: 0,
+
+	matrixValues3: [],
+	integrityValues3: [],
+	socializationValues3: [],
+	unityValues3: 0,
+	planetaryValues3: 0,
 }
 
 export const compatibilityReducer = (state = initialState, action) => {
@@ -48,7 +54,12 @@ export const compatibilityReducer = (state = initialState, action) => {
 			};
 		case COMPATIBILITY_UPDATE:
 			return {
-				...state
+				...state,
+				matrixValues3: action.matrixValues,
+				integrityValues3: action.integrityValues,
+				socializationValues3: action.socializationValues,
+				unityValues3: action.unityValues,
+				planetaryValues3: action.planetaryValues,
 			};
 		default:
 			return state;

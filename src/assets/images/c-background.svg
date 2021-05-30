@@ -1,4 +1,12 @@
 <svg width="1150" height="1e3" version="1.1" viewBox="0 0 304.27 264.58" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<filter id="b" x="-4.32e-5" y="-4.32e-5" width="1.0001" height="1.0001" style="color-interpolation-filters:sRGB">
+			<feGaussianBlur stdDeviation="0.00038099999"/>
+		</filter>
+		<filter id="a" x="-4.32e-5" y="-4.32e-5" width="1.0001" height="1.0001" style="color-interpolation-filters:sRGB">
+			<feGaussianBlur stdDeviation="0.00038099999"/>
+		</filter>
+	</defs>
 	<g transform="translate(-4.3495 -22.484)">
 		<path transform="matrix(.71687 0 0 .71712 24.892 24.718)" d="m303.96 303.82-122.56 50.765-122.56-50.765-50.765-122.56 50.765-122.56 122.56-50.765 122.56 50.765 50.765 122.56z" style="fill:none;stop-color:#000000;stroke-width:.73803;stroke:#000"/>
 		<path d="m154.93 30.416-87.857 36.405-36.392 87.889h248.5l-36.392-87.889z" style="fill:#fffaf0;stop-color:#000000"/>

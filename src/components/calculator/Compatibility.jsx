@@ -7,6 +7,7 @@ import { SingleParameter } from './controls/SingleParameter';
 import { useDispatch, useSelector } from 'react-redux';
 import { compatibilitySetDate1, compatibilitySetDate2, compatibilityUpdate } from '../../store/compatibility/actions';
 import { useEffect } from 'react';
+import { CompatibilityMatrix } from './controls/CompatibilityMatrix';
 
 export const Compatibility = () => {
 	const dispatch = useDispatch();
@@ -14,10 +15,12 @@ export const Compatibility = () => {
 
 	const changeBirthdate1 = (date) => {
 		dispatch(compatibilitySetDate1(date));
+		dispatch(compatibilityUpdate(date, state.date2));
 	};
 
 	const changeBirthdate2 = (date) => {
 		dispatch(compatibilitySetDate2(date));
+		dispatch(compatibilityUpdate(state.date1, date));
 	};
 
 	useEffect(()=>{
@@ -95,6 +98,34 @@ export const Compatibility = () => {
 															 value={state.planetaryValues2}/>
 						</div>
 					</div>
+				</div>
+			</div>
+			<hr/>
+			<div className="row mt-5">
+				<div className="col-6">
+					<div className="row">
+						<div className="col-6">
+							<DoubleParameter title="Для чего взаимоотношения" description="Что каждый должен осознать и реализовать в паре"
+															 values={state.integrityValues3} names={['Понять', 'Создать']}/>
+						</div>
+						<div className="col-6">
+							<DoubleParameter title="Единство" description="На чем держиться целостность пары"
+															 values={state.unityValues3} names={['', '']}/>
+						</div>
+					</div>
+					<div className="row mt-4">
+						<div className="col-6">
+							<DoubleParameter title="Партнёрство" description="Что пара должна создать вместе. Как партнерство помогает реализовываться в социуме."
+															 values={state.socializationValues3} names={['Стратегии', 'Видение']}/>
+						</div>
+						<div className="col-6">
+							<SingleParameter title="Планетарное воздействие" description="Сверхспособность пары. Уникальный способ влиять на массы"
+															 value={state.planetaryValues3}/>
+						</div>
+					</div>
+				</div>
+				<div className="col-6 mb-5">
+					<CompatibilityMatrix values={state.matrixValues3}/>
 				</div>
 			</div>
 		</div>
