@@ -10,6 +10,7 @@ export const PERSONAL_SET_DATE = 'PERSONAL/SET_DATE';
 export const personalSetDate = (date) => {
 	return {
 		type: PERSONAL_SET_DATE,
+		date: date,
 		matrixValues: computeMatrix(date),
 		navigatorValues: computeNavigator(date),
 		additionalTableValues: computeAdditionalTable(date),

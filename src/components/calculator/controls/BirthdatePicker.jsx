@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
-export const BirthdatePicker = ({onChangeValue}) => {
-	const [value, setValue] = useState(new Date());
+export const BirthdatePicker = ({onChangeValue, initialDate}) => {
+	const [value, setValue] = useState(initialDate);
 	const [year, setYear] = useState(value.getFullYear());
 	const [month, setMonth] = useState(value.getMonth());
 	const [date, setDate] = useState(value.getDate());
@@ -25,9 +25,8 @@ export const BirthdatePicker = ({onChangeValue}) => {
 			newValue = new Date(year, month, 1);
 		}
 		setValue(newValue);
+		onChangeValue(newValue);
 	};
-
-	useEffect(() => onChangeValue(value), [onChangeValue, value]);
 
 	return (
 		<div className="row">

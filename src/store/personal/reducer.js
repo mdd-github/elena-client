@@ -1,10 +1,7 @@
 import { PERSONAL_SET_DATE } from './actions';
 
 const initialState = {
-	date: null,
-
-	computed: false,
-
+	date: new Date(),
 	matrixValues: [],
 	navigatorValues: [],
 	additionalTableValues: [],
@@ -19,6 +16,7 @@ export const personalReducer = (state = initialState, action) => {
 		case PERSONAL_SET_DATE:
 			return {
 				...state,
+				date: action.date,
 				matrixValues: action.matrixValues,
 				additionalTableValues: action.additionalTableValues,
 				navigatorValues: action.navigatorValues,

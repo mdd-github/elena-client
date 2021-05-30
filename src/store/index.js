@@ -5,12 +5,14 @@ import { applicationReducer } from './application/reducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { authReducer } from './auth/reducer';
 import { personalReducer } from './personal/reducer';
+import { compatibilityReducer } from './compatibility/reducer';
 
 
 const reducers = combineReducers({
 	application: applicationReducer,
 	auth: authReducer,
 	personal: personalReducer,
+	compatibility: compatibilityReducer,
 });
 
 const middlewares = [thunk];
