@@ -20,6 +20,12 @@ export const personalReducer = (state = initialState, action) => {
 			return {
 				...state,
 				matrixValues: action.matrixValues,
+				additionalTableValues: action.additionalTableValues,
+				navigatorValues: action.navigatorValues,
+				integrityValues: action.integrityValues,
+				socializationValues: action.socializationValues,
+				innerPointValue: action.innerPointValue,
+				planetaryValues: action.planetaryValues,
 			}
 		default:
 			return state;
