@@ -6,6 +6,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { authReducer } from './auth/reducer';
 import { personalReducer } from './personal/reducer';
 import { compatibilityReducer } from './compatibility/reducer';
+import { usersReducer } from './users/reducer';
 
 
 const reducers = combineReducers({
@@ -13,6 +14,7 @@ const reducers = combineReducers({
 	auth: authReducer,
 	personal: personalReducer,
 	compatibility: compatibilityReducer,
+	users: usersReducer,
 });
 
 const middlewares = [thunk];

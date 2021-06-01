@@ -1,4 +1,4 @@
-import { sendPOST } from '../../api/send';
+import { sendPOST } from '../api/sendPost';
 
 export const AUTH_REFRESH_SESSION = 'AUTH/REFRESH_SESSION';
 export const AUTH_REFRESH_SESSION_SUCCEED = 'AUTH/REFRESH_SESSION/SUCCEED';
@@ -27,11 +27,13 @@ export const authRefreshSession = () => {
 		const response = await sendPOST('auth/refresh', {
 			fingerprint: getState().application.fingerprint,
 		});
+
 		if(response.success) {
 			dispatch({
 				type: AUTH_REFRESH_SESSION_SUCCEED,
 				token: response.payload.token,
 				role: response.payload.role,
+				id: response.payload.id,
 			});
 		} else {
 			dispatch({
@@ -92,6 +94,7 @@ export const authLogin = (formData) => {
 				type: AUTH_LOGIN_SUCCEED,
 				token: response.payload.token,
 				role: response.payload.role,
+				id: response.payload.id,
 			});
 		} else {
 			dispatch({

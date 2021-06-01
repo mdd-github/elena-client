@@ -10,6 +10,7 @@ import {
 const initialState = {
 	authorized: false,
 	token: '',
+	id: 0,
 	role: 'guest',
 
 	registerState: null,
@@ -43,6 +44,7 @@ export const authReducer = (state = initialState, action) => {
 				authorized: true,
 				token: action.token,
 				role: action.role,
+				id: action.id,
 			};
 		case AUTH_REFRESH_SESSION_FAILED:
 			return {
@@ -113,6 +115,7 @@ export const authReducer = (state = initialState, action) => {
 				...state,
 				token: action.token,
 				role: action.role,
+				id: action.id,
 				authorized: true,
 				loginState: {
 					...state.loginState,
