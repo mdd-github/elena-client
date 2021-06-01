@@ -3,7 +3,7 @@ import { computeNavigator } from '../compute/navigator';
 import { computeAdditionalTable } from '../compute/additionalTable';
 import { composeIntegrity, computeIntegrity } from '../compute/integrity';
 import { composeSocialization, computeSocialization } from '../compute/socialization';
-import { composeInnerPoint, computeInnerPoint } from '../compute/innerPont';
+import { computeInnerPoint } from '../compute/innerPont';
 import { composePlanetary, computePlanetary } from '../compute/planetary';
 import { composeUnity } from '../compute/unity';
 
