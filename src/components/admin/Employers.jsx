@@ -3,7 +3,7 @@ import { NavBreadcrumbs } from './controls/NavBreadcrumbs';
 import s from '../../assets/scss/components/Navigator.module.scss';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { usersGetAll } from '../../store/users/actions';
+import { usersBan, usersGetAll, usersRemove, usersUnban } from '../../store/users/actions';
 
 export const Employers = () => {
 	const users = useSelector(state => state.users);
@@ -13,6 +13,18 @@ export const Employers = () => {
 	useEffect(() => {
 		dispatch(usersGetAll());
 	}, [dispatch]);
+
+	const remove = (id) => {
+		dispatch(usersRemove(id));
+	};
+
+	const ban = (id) => {
+		dispatch(usersBan(id));
+	};
+
+	const unban = (id) => {
+		dispatch(usersUnban(id));
+	};
 
 	return (
 		<div className="container">
@@ -51,7 +63,13 @@ export const Employers = () => {
 											{
 												auth?.id !== user.id &&
 												<>
-													<Link to="#">Заблокировать</Link> | <Link to="#">Удалить</Link>
+													{
+														!user.banned && <Link to="#" onClick={() => ban(user.id)}>Заблокировать</Link>
+													}
+													{
+														user.banned && <Link to="#" onClick={() => unban(user.id)}>Разблокировать</Link>
+													}
+													| <Link to="#" onClick={() => remove(user.id)}>Удалить</Link>
 												</>
 											}
 										</td>

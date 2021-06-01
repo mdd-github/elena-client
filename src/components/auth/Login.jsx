@@ -23,6 +23,8 @@ export const Login = () => {
 
 		if(loginState?.errorCode === 3)
 			setLoginError('Неверный логин или пароль');
+		else if(loginState?.errorCode === 4)
+			setLoginError('Аккаунт заблокирован');
 		else
 			setLoginError('');
 	}, [loginState, history]);
