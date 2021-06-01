@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, useRouteMatch } from 'react-router-dom';
+import { Redirect, Route, Switch, useRouteMatch } from 'react-router-dom';
 
 import { Compatibility } from './Compatibility';
 import { Personal } from './Personal';
@@ -9,6 +9,9 @@ export const CalculatorRouter = () => {
 
 	return (
 		<Switch>
+			<Route path={`${path}/`} exact>
+				<Redirect to={`${path}/personal`}/>
+			</Route>
 			<Route path={`${path}/personal`}>
 				<Personal/>
 			</Route>

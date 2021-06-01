@@ -5,6 +5,7 @@ import { authLogout } from '../../store/auth/actions';
 
 export const Header = () => {
 	const authorized = useSelector(state => state.auth.authorized);
+	const role = useSelector(state => state.auth.role);
 	const dispatch = useDispatch();
 
 	const onLogout = () => {
@@ -38,11 +39,15 @@ export const Header = () => {
 					{
 						authorized &&
 						<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+							{
+								role === 'admin' &&
+								<li className="nav-item">
+									<NavLink to="/admin" className="nav-link">Администрирование</NavLink>
+								</li>
+							}
+
 							<li className="nav-item">
-								<Link to="/profile" className="nav-link" aria-current="page">Профиль</Link>
-							</li>
-							<li className="nav-item">
-								<Link to="#" onClick={onLogout} className="nav-link" href="#">Выход</Link>
+								<Link to="#" onClick={onLogout} className="nav-link">Выход</Link>
 							</li>
 						</ul>
 					}

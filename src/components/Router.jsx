@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { AuthRouter } from './auth/AuthRouter';
 import { CalculatorRouter } from './calculator/CalculatorRouter';
+import { AdminRouter } from './admin/AdminRouter';
 
 
 export const Router = () => {
@@ -11,19 +12,25 @@ export const Router = () => {
 	return (
 		<Switch>
 			<Route path="/" exact>
-				<h1>IndexPage</h1>
+				<Redirect to="/calculator"/>
 			</Route>
 
 			<Route path="/auth"> {
 				authState.authorized
-					? <Redirect to="/"/>
+					? <Redirect to="/calculator"/>
 					: <AuthRouter/>
+			} </Route>
+
+			<Route path="/admin"> {
+				authState.authorized && authState.role === 'admin'
+					? <AdminRouter/>
+					: <Redirect to="/"/>
 			} </Route>
 
 			<Route path="/calculator"> {
 				authState.authorized
 					? <CalculatorRouter/>
-					: <Redirect to="/"/>
+					: <Redirect to="/auth"/>
 			} </Route>
 
 			<Route path="*">
