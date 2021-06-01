@@ -6,6 +6,9 @@ import { useHistory } from 'react-router-dom';
 export const Login = () => {
 	const dispatch = useDispatch();
 	const loginState = useSelector(state => state.auth.loginState);
+	const [loginError, setLoginError] = useState('');
+	const [emailError, setEmailError] = useState('');
+	const [passwordError, setPasswordError] = useState('');
 
 	useEffect(() => {
 		dispatch(authLoginMount());
@@ -17,6 +20,11 @@ export const Login = () => {
 		if(loginState && loginState.success) {
 			history.push('/');
 		}
+
+		if(loginState?.errorCode === 3)
+			setLoginError('Неверный логин или пароль');
+		else
+			setLoginError('');
 	}, [loginState, history]);
 
 	const [formData, setFormData] = useState({
@@ -24,16 +32,49 @@ export const Login = () => {
 		password: '',
 	});
 
+	const updateErrorMessageFor = (name, value) => {
+		switch(name) {
+			case 'password':
+				if(value.trim() === '') setPasswordError('Введите пароль');
+				else setPasswordError('');
+				break;
+			case 'email':
+				if(value.trim() === '') setEmailError('Введите e-mail');
+				else if(!value.match(/.@./)) setEmailError('Укажите корректный e-mail');
+				else setEmailError('');
+				break;
+			default:
+				break;
+		}
+		setLoginError('');
+	};
+
+	const hasErrors = () => {
+		let errors = false;
+		Object.keys(formData).forEach((key) => updateErrorMessageFor(key, formData[key]));
+
+		if(emailError !== '' ||
+			passwordError !== '') {
+			errors = true;
+		}
+
+		return errors;
+	};
+
 	const onChange = (event) => {
 		setFormData({
 			...formData,
 			[event.target.name]: event.target.value,
 		});
+
+		updateErrorMessageFor(event.target.name, event.target.value);
 	};
 
 	const onSubmit = (event) => {
 		event.preventDefault();
-		dispatch(authLogin(formData));
+		if(!hasErrors()) {
+			dispatch(authLogin(formData));
+		}
 	}
 
 	return (
@@ -47,14 +88,17 @@ export const Login = () => {
 				<div className="col-12 col-md-6 offset-md-3">
 					<form onSubmit={onSubmit}>
 						<div className="form-group mt-3">
+							<small className="mb-2 text-danger">{emailError}</small>
 							<input type="email" className="form-control form-control-lg" name="email"
 										 value={formData.email} onChange={onChange} placeholder="Адрес электронной почты"/>
 						</div>
 						<div className="form-group mt-3">
+							<small className="mb-2 text-danger">{passwordError}</small>
 							<input type="password" className="form-control form-control-lg" name="password"
 										 value={formData.password} onChange={onChange} placeholder="Пароль"/>
 						</div>
 						<div className="form-group mt-3">
+							<small className="mb-2 text-danger">{loginError}</small>
 							<input type="submit" className="form-control btn btn-lg btn-primary"/>
 						</div>
 					</form>

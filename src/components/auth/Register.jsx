@@ -16,9 +16,9 @@ export const Register = () => {
 	});
 	const [firstNameError, setFirstNameError] = useState('');
 	const [lastNameError, setLastNameError] = useState('');
-	const [emailNameError, setEmailError] = useState('');
-	const [passwordNameError, setPasswordError] = useState('');
-	const [inviteNameError, setInviteError] = useState('');
+	const [emailError, setEmailError] = useState('');
+	const [passwordError, setPasswordError] = useState('');
+	const [inviteError, setInviteError] = useState('');
 
 	useEffect(() => {
 		dispatch(authRegisterMount());
@@ -28,7 +28,19 @@ export const Register = () => {
 		if(registerState && registerState.success) {
 			history.push('/auth/check-email');
 		}
+
+		if(registerState?.errorCode === 7)
+			setEmailError('Аккаунт с таким e-mail уже существует');
+		else
+			setEmailError('');
+
+		if(registerState?.errorCode === 8)
+			setInviteError('Неверный код приглашения');
+		else
+			setInviteError('');
 	}, [registerState, history]);
+
+
 
 	const updateErrorMessageFor = (name, value) => {
 		switch(name) {
@@ -61,16 +73,17 @@ export const Register = () => {
 	};
 
 	const hasErrors = () => {
-		let errors = true;
+		let errors = false;
 		Object.keys(formData).forEach((key) => updateErrorMessageFor(key, formData[key]));
 
 		if(firstNameError !== '' ||
 			lastNameError !== '' ||
-			emailNameError !== '' ||
-			passwordNameError !== '' ||
-			inviteNameError !== '') {
+			emailError !== '' ||
+			passwordError !== '' ||
+			inviteError !== '') {
 			errors = true;
 		}
+
 		return errors;
 	};
 
@@ -81,6 +94,7 @@ export const Register = () => {
 		});
 		updateErrorMessageFor(event.target.name, event.target.value);
 	};
+
 	const onSubmit = (event) => {
 		event.preventDefault();
 
@@ -112,17 +126,17 @@ export const Register = () => {
 												 value={formData.lastName} onChange={onChange} placeholder="Фамилия"/>
 								</div>
 								<div className="form-group mt-3">
-									<small className="mb-2 text-danger">{emailNameError}</small>
+									<small className="mb-2 text-danger">{emailError}</small>
 									<input type="email" className="form-control form-control-lg" name="email"
 												 value={formData.email} onChange={onChange} placeholder="Адрес электронной почты"/>
 								</div>
 								<div className="form-group mt-3">
-									<small className="mb-2 text-danger">{passwordNameError}</small>
+									<small className="mb-2 text-danger">{passwordError}</small>
 									<input type="password" className="form-control form-control-lg" name="password"
 												 value={formData.password} onChange={onChange} placeholder="Пароль"/>
 								</div>
 								<div className="form-group mt-3">
-									<small className="mb-2 text-danger">{inviteNameError}</small>
+									<small className="mb-2 text-danger">{inviteError}</small>
 									<input type="text" className="form-control form-control-lg" name="invite"
 												 value={formData.invite} onChange={onChange} placeholder="Код приглашения"/>
 								</div>
