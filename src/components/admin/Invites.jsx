@@ -3,7 +3,7 @@ import { NavBreadcrumbs } from './controls/NavBreadcrumbs';
 import s from '../../assets/scss/components/Navigator.module.scss';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { invitesGetAll } from '../../store/invites/actions';
+import { invitesCreate, invitesGetAll, invitesRemove } from '../../store/invites/actions';
 
 export const Invites = () => {
 	const invites = useSelector(state => state.invites);
@@ -17,8 +17,11 @@ export const Invites = () => {
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col-12 mt-3 mb-3">
+				<div className="col-10 mt-3 mb-3">
 					<NavBreadcrumbs/>
+				</div>
+				<div className="col-2 mt-3 mb-3 text-end">
+					<Link to="#" onClick={()=>dispatch(invitesCreate())} className="btn btn-success btn-sm">Сгенерировать</Link>
 				</div>
 			</div>
 
@@ -44,7 +47,7 @@ export const Invites = () => {
 									<td>{invite.value}</td>
 									<td>{date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()}</td>
 									<td>
-										<Link to="#" >Удалить</Link>
+										<Link to="#" onClick={() => dispatch(invitesRemove(invite.value))}>Удалить</Link>
 									</td>
 								</tr>
 							)})
