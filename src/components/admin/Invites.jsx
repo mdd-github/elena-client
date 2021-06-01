@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavBreadcrumbs } from './controls/NavBreadcrumbs';
 import s from '../../assets/scss/components/Navigator.module.scss';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { invitesGetAll } from '../../store/invites/actions';
 
 export const Invites = () => {
+	const invites = useSelector(state => state.invites);
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(invitesGetAll());
+	}, [dispatch]);
+
+
 	return (
 		<div className="container">
 			<div className="row">
@@ -25,14 +35,20 @@ export const Invites = () => {
 						</tr>
 						</thead>
 						<tbody>
-						<tr className={`${s.row}`}>
-							<td>1</td>
-							<td>invite</td>
-							<td>1/07/2021</td>
-							<td>
-								<Link to="#" >Удалить</Link>
-							</td>
-						</tr>
+						{
+							invites?.all?.map(invite => {
+								const date = new Date(invite.expiresAt);
+								return (
+								<tr className={`${s.row}`} key={invite.id}>
+									<td>{invite.id}</td>
+									<td>{invite.value}</td>
+									<td>{date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()}</td>
+									<td>
+										<Link to="#" >Удалить</Link>
+									</td>
+								</tr>
+							)})
+						}
 						</tbody>
 					</table>
 				</div>
