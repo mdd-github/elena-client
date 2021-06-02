@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { authLogout } from '../../store/auth/actions';
+import s from '../../assets/scss/components/Navbar.module.scss';
+import logoPng from '../../assets/images/logo.png';
+
 
 export const Header = () => {
 	const authorized = useSelector(state => state.auth.authorized);
@@ -12,17 +15,29 @@ export const Header = () => {
 		dispatch(authLogout());
 	};
 
+	const [collapsed, setCollapsed] = useState(true);
+
+	const toggleCollapsed = () => setCollapsed(!collapsed);
+
 	return (
 		<header>
-			<div className="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div className={`navbar navbar-expand-lg navbar-dark ${s.navbarBg}`}>
 				<div className="container-fluid">
 					<div className="">
-						<Link to="/" className="navbar-brand">Нумерологическая матрица</Link>
+						<Link to="/" className="navbar-brand">
+							<img src={logoPng} alt="Logo" width={32} className="me-1"/>
+							Нумерологическая матрица
+						</Link>
 					</div>
 
+					<button className="navbar-toggler" type="button" onClick={toggleCollapsed}>
+						<span className="navbar-toggler-icon"/>
+					</button>
+
+					<div className={`${collapsed && 'collapse'} navbar-collapse`}>
 					{
 						authorized &&
-						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul className="navbar-nav me-auto mb-2 mb-lg-0  mr-auto">
 							<li className="nav-item">
 								<NavLink to="/calculator/personal" className="nav-link" activeClassName="active">
 									Персональный расчёт
@@ -63,6 +78,7 @@ export const Header = () => {
 							</li>
 						</ul>
 					}
+					</div>
 				</div>
 			</div>
 		</header>
