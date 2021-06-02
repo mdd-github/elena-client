@@ -1,4 +1,4 @@
-
+@import "../variables";
 .parameter {
   border: 1px solid #ddd;
   padding: 0.5rem;
@@ -8,6 +8,7 @@
   &_Title {
     font-size: 0.9rem;
     font-weight: 700;
+    color: $color-navbar;
   }
 
   &_Description {

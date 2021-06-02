@@ -24,9 +24,9 @@ export const Header = () => {
 			<div className={`navbar navbar-expand-lg navbar-dark ${s.navbarBg}`}>
 				<div className="container-fluid">
 					<div className="">
-						<Link to="/" className="navbar-brand">
-							<img src={logoPng} alt="Logo" width={32} className="me-1"/>
-							Нумерологическая матрица
+						<Link to="/" className={`${s.brand} me-3`}>
+							<img src={logoPng} alt="Logo" className="me-1"/>
+							Нумерологическая<br/>матрица
 						</Link>
 					</div>
 

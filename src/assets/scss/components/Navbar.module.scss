@@ -2,4 +2,19 @@
 
 .navbarBg {
   background-color: $color-navbar;
+
+  .brand {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #FFF;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
