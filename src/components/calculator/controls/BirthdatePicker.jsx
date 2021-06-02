@@ -5,6 +5,11 @@ export const BirthdatePicker = ({onChangeValue, initialDate}) => {
 	const [year, setYear] = useState(value.getFullYear());
 	const [month, setMonth] = useState(value.getMonth());
 	const [date, setDate] = useState(value.getDate());
+	const [name, setName] = useState('');
+
+	const changeName = (e) => {
+		setName(e.target.value);
+	};
 
 	const changeDate = (e) => {
 		setDate(e.target.value);
@@ -29,16 +34,17 @@ export const BirthdatePicker = ({onChangeValue, initialDate}) => {
 	};
 
 	return (
-		<div className="row">
-			<div className="col-12 mt-3 text-center">
-				<h5>Дата рождения</h5>
+		<div className="row mt-md-3 mt-lg-0">
+			<div className="col-12 col-md-5 p-0 my-3 my-md-0 ">
+				<input type="text" className="form-control form-select-sm" value={name}
+							 onChange={changeName} placeholder="Имя"/>
 			</div>
-			<div className="col-4">
-				<input type="text" className="form-control" value={date}
+			<div className="col-3 col-md-2 pe-0 ps-0 ps-md-3">
+				<input type="text" className="form-control form-select-sm" value={date}
 							 onChange={changeDate} onBlur={changeValue}/>
 			</div>
-			<div className="col-4">
-				<select className="form-select" value={month}
+			<div className="col-6 col-md-3">
+				<select className="form-select form-select-sm" value={month}
 								onChange={changeMonth} onBlur={changeValue}>
 					<option value="0">Январь</option>
 					<option value="1">Февраль</option>
@@ -54,8 +60,8 @@ export const BirthdatePicker = ({onChangeValue, initialDate}) => {
 					<option value="11">Декабрь</option>
 				</select>
 			</div>
-			<div className="col-4">
-				<input type="text" className="form-control" value={year}
+			<div className="col-3 col-md-2 col-2 p-0">
+				<input type="text" className="form-control form-select-sm" value={year}
 							 onChange={changeYear} onBlur={changeValue}/>
 			</div>
 		</div>

@@ -1,14 +1,15 @@
-import React, { useEffect } from 'react';
-import { NavBreadcrumbs } from './controls/NavBreadcrumbs';
+import React, {useEffect} from 'react';
+import {NavBreadcrumbs} from './controls/NavBreadcrumbs';
 import s from '../../assets/scss/components/Navigator.module.scss';
-import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { usersBan, usersGetAll, usersRemove, usersUnban } from '../../store/users/actions';
+import {Link} from 'react-router-dom';
+import {useDispatch, useSelector} from 'react-redux';
+import {usersBan, usersGetAll, usersRemove, usersUnban} from '../../store/users/actions';
 
 export const Employers = () => {
 	const users = useSelector(state => state.users);
 	const auth = useSelector(state => state.auth);
 	const dispatch = useDispatch();
+
 
 	useEffect(() => {
 		dispatch(usersGetAll());
@@ -34,7 +35,7 @@ export const Employers = () => {
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-12">
+				<div className="col-12 mb-5">
 					<div className="table-responsive-md">
 						<table className="table table-sm table-bordered border-dark text-center">
 							<thead>
@@ -61,16 +62,16 @@ export const Employers = () => {
 										<td>{user.role}</td>
 										<td>
 											{
-												auth?.id !== user.id &&
-												<>
-													{
-														!user.banned && <Link to="#" onClick={() => ban(user.id)}>Заблокировать</Link>
-													}
-													{
-														user.banned && <Link to="#" onClick={() => unban(user.id)}>Разблокировать</Link>
-													}
-													| <Link to="#" onClick={() => remove(user.id)}>Удалить</Link>
-												</>
+												auth?.id !== user.id ?
+													<>
+														{
+															!user.banned && <Link to="#" onClick={() => ban(user.id)}>Заблокировать</Link>
+														}
+														{
+															user.banned && <Link to="#" onClick={() => unban(user.id)}>Разблокировать</Link>
+														}
+														| <Link to="#" onClick={() => remove(user.id)}>Удалить</Link>
+													</> : <>&nbsp;</>
 											}
 										</td>
 									</tr>

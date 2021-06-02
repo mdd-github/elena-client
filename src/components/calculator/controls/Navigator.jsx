@@ -5,10 +5,10 @@ export const Navigator = (props) => {
 	return (
 		<>
 			<div className="row">
-				<div className="col-12 mt-3 text-center">
+				<div className="col-12 p-0">
 					<h5>Навигатор</h5>
 				</div>
-				<div className="col-12 mt-3">
+				<div className="col-12 mt-1 p-0">
 					<div className="table-responsive-md">
 						<table className="table table-sm table-bordered border-dark text-center">
 							<thead>
