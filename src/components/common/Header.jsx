@@ -26,7 +26,7 @@ export const Header = () => {
 					<div className="">
 						<Link to="/" className={`${s.brand} me-3`}>
 							<img src={logoPng} alt="Logo" className="me-1"/>
-							Нумерологическая<br/>матрица
+							Проект<br/>Светланы Титовой
 						</Link>
 					</div>
 
