@@ -8,7 +8,7 @@ export const HomePage = () => {
 
 	return (
 		<div className={s.home}>
-			<div className={s.home_Inner}>
+			<div className={s.home_Inner + '  ps-3 pe-3'}>
 				<span className={s.home_Orange}>Калькулятор</span>
 				<h1 className={s.home_Title}>
 					Нумерологическая матрица по дате

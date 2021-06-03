@@ -21,7 +21,7 @@ export const Personal = ({printRef}) => {
 	}, [dispatch]);
 
 	return (
-		<div className="container-fluid ps-5 pe-5" style={{'maxWidth':'1440px'}} ref={printRef}>
+		<div className="container-fluid ps-3 pe-3 ps-lg-5 pe-lg-5" style={{'maxWidth':'1440px'}} ref={printRef}>
 			<div className="row mt-5">
 				<div className="col-12 col-lg-6">
 					<h2 className="mb-3 text-center">Персональный расчёт</h2>
