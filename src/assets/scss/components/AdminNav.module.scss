@@ -1,11 +1,19 @@
+@import "../variables";
+
 .breadcrumb {
 
-  span {
+  h5 {
     font-size: 1.3rem;
     font-weight: 400;
     margin-right: 1rem;
+    display: inline-block;
     a {
       text-decoration: none;
+      color: transparentize($color-navbar, 0.3);
+
+      &:hover {
+        color: transparentize($color-navbar, 0.1);
+      }
     }
   }
 }

@@ -27,7 +27,7 @@ export const Personal = ({printRef}) => {
 		<div className="container-fluid ps-3 pe-3 ps-lg-5 pe-lg-5" style={{'maxWidth':'1440px'}}>
 			<div className="row mt-5">
 				<div className="col-12 col-lg-6">
-					<h2 className="mb-3 text-center  print-none">Персональный расчёт</h2>
+					<h5 className="mb-3 text-center  print-none">Персональный расчёт</h5>
 					<PersonalMatrix values={state.matrixValues}/>
 				</div>
 				<div className="col-12 col-lg-6">

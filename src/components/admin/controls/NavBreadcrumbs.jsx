@@ -12,19 +12,19 @@ export const NavBreadcrumbs = () => {
 					{
 						path !== '/admin/employers'
 							?
-							<span>
+							<h5>
 								<NavLink to="/admin/employers" className="link-secondary">Сотрудники</NavLink>
-							</span>
-							: <span> Сотрудники </span>
+							</h5>
+							: <h5> Сотрудники </h5>
 					}
 
 				{
 					path !== '/admin/invites'
 						?
-						<span className="">
+						<h5 className="">
 								<NavLink to="/admin/invites" className="link-secondary">Коды приглашения</NavLink>
-						</span>
-						: <span > Коды приглашения </span>
+						</h5>
+						: <h5 > Коды приглашения </h5>
 				}
 			</span>
 		</div>

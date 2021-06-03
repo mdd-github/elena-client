@@ -83,7 +83,7 @@ export const Login = () => {
 		<div className="container min-vh-100">
 			<div className="row">
 				<div className="col-12 mt-5 text-center">
-					<h1>Вход в аккаунт</h1>
+					<h5>Вход в аккаунт</h5>
 				</div>
 			</div>
 			<div className="row">
@@ -91,17 +91,17 @@ export const Login = () => {
 					<form onSubmit={onSubmit}>
 						<div className="form-group mt-3">
 							<small className="mb-2 text-danger">{emailError}</small>
-							<input type="email" className="form-control form-control-lg" name="email"
+							<input type="email" className="form-control" name="email"
 										 value={formData.email} onChange={onChange} placeholder="Адрес электронной почты"/>
 						</div>
 						<div className="form-group mt-3">
 							<small className="mb-2 text-danger">{passwordError}</small>
-							<input type="password" className="form-control form-control-lg" name="password"
+							<input type="password" className="form-control" name="password"
 										 value={formData.password} onChange={onChange} placeholder="Пароль"/>
 						</div>
 						<div className="form-group mt-3">
 							<small className="mb-2 text-danger">{loginError}</small>
-							<input type="submit" className="form-control btn btn-lg btn-primary text-light"/>
+							<input type="submit" className="form-control btn btn-primary text-light"/>
 						</div>
 					</form>
 				</div>

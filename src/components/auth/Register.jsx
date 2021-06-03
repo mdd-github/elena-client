@@ -107,7 +107,7 @@ export const Register = () => {
 		<div className="container mb-5 min-vh-100">
 			<div className="row">
 				<div className="col-12 mt-5 text-center">
-					<h1>Регистрация</h1>
+					<h5>Регистрация</h5>
 				</div>
 			</div>
 			{
@@ -117,31 +117,31 @@ export const Register = () => {
 							<form onSubmit={onSubmit}>
 								<div className="form-group mt-3">
 									<small className="mb-2 text-danger">{firstNameError}</small>
-									<input type="text" className="form-control form-control-lg" name="firstName"
+									<input type="text" className="form-control" name="firstName"
 												 value={formData.firstName} onChange={onChange} placeholder="Ваше имя"/>
 								</div>
 								<div className="form-group mt-3">
 									<small className="mb-2 text-danger">{lastNameError}</small>
-									<input type="text" className="form-control form-control-lg" name="lastName"
+									<input type="text" className="form-control" name="lastName"
 												 value={formData.lastName} onChange={onChange} placeholder="Фамилия"/>
 								</div>
 								<div className="form-group mt-3">
 									<small className="mb-2 text-danger">{emailError}</small>
-									<input type="email" className="form-control form-control-lg" name="email"
+									<input type="email" className="form-control" name="email"
 												 value={formData.email} onChange={onChange} placeholder="Адрес электронной почты"/>
 								</div>
 								<div className="form-group mt-3">
 									<small className="mb-2 text-danger">{passwordError}</small>
-									<input type="password" className="form-control form-control-lg" name="password"
+									<input type="password" className="form-control" name="password"
 												 value={formData.password} onChange={onChange} placeholder="Пароль"/>
 								</div>
 								<div className="form-group mt-3">
 									<small className="mb-2 text-danger">{inviteError}</small>
-									<input type="text" className="form-control form-control-lg" name="invite"
+									<input type="text" className="form-control" name="invite"
 												 value={formData.invite} onChange={onChange} placeholder="Код приглашения"/>
 								</div>
 								<div className="form-group mt-3">
-									<input type="submit" className="form-control btn btn-lg btn-primary text-light"/>
+									<input type="submit" className="form-control btn btn-primary text-light"/>
 								</div>
 							</form>
 						</div>
