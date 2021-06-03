@@ -9,7 +9,7 @@ import { compatibilitySetDate1, compatibilitySetDate2, compatibilityUpdate } fro
 import { useEffect } from 'react';
 import { CompatibilityMatrix } from './controls/CompatibilityMatrix';
 
-export const Compatibility = () => {
+export const Compatibility = ({printRef}) => {
 	const dispatch = useDispatch();
 	const state = useSelector(state => state.compatibility);
 
@@ -30,7 +30,7 @@ export const Compatibility = () => {
 	}, [dispatch]);
 
 	return (
-		<div className="container-fluid ps-5 pe-5" style={{'maxWidth':'1440px'}}>
+		<div className="container-fluid ps-5 pe-5" style={{'maxWidth':'1440px'}} ref={printRef}>
 			<div className="row mt-5">
 				<div className="col-12 col-lg-6">
 					<h2 className="mb-3 text-center">Расчёт совместимости</h2>

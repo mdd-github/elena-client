@@ -1,15 +1,17 @@
 import React, {useState} from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import {Link, NavLink, useLocation} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { authLogout } from '../../store/auth/actions';
 import s from '../../assets/scss/components/Navbar.module.scss';
 import logoPng from '../../assets/images/logo.png';
+import ReactToPrint from 'react-to-print';
 
 
-export const Header = () => {
+export const Header = ({printRef}) => {
 	const authorized = useSelector(state => state.auth.authorized);
 	const role = useSelector(state => state.auth.role);
 	const dispatch = useDispatch();
+	const path = useLocation();
 
 	const onLogout = () => {
 		dispatch(authLogout());
@@ -48,6 +50,21 @@ export const Header = () => {
 									Расчёт совместимости
 								</NavLink>
 							</li>
+
+							{
+								(path.pathname === '/calculator/compatibility' || path.pathname === '/calculator/personal') &&
+								<li className="nav-item">
+									<ReactToPrint
+										trigger={() => {
+											return (<Link to="#" className="nav-link">
+												Распечатать
+											</Link>);
+										}}
+										content={() => printRef.current}
+									/>
+									
+								</li>
+							}
 						</ul>
 					}
 

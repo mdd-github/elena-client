@@ -7,7 +7,7 @@ import { AdminRouter } from './admin/AdminRouter';
 import {HomePage} from './HomePage';
 
 
-export const Router = () => {
+export const Router = ({printRef}) => {
 	const authState = useSelector((state) => state.auth);
 
 	return (
@@ -30,7 +30,7 @@ export const Router = () => {
 
 			<Route path="/calculator"> {
 				authState.authorized
-					? <CalculatorRouter/>
+					? <CalculatorRouter printRef={printRef}/>
 					: <Redirect to="/auth"/>
 			} </Route>
 

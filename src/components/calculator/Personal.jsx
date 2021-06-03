@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { personalSetDate } from '../../store/personal/actions';
 import { useEffect } from 'react';
 
-export const Personal = () => {
+export const Personal = ({printRef}) => {
 	const dispatch = useDispatch();
 	const state = useSelector(state => state.personal);
 
@@ -21,7 +21,7 @@ export const Personal = () => {
 	}, [dispatch]);
 
 	return (
-		<div className="container-fluid ps-5 pe-5" style={{'maxWidth':'1440px'}}>
+		<div className="container-fluid ps-5 pe-5" style={{'maxWidth':'1440px'}} ref={printRef}>
 			<div className="row mt-5">
 				<div className="col-12 col-lg-6">
 					<h2 className="mb-3 text-center">Персональный расчёт</h2>

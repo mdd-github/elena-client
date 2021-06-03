@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 import ReactDOM from 'react-dom';
 import { Provider, useDispatch, useSelector } from 'react-redux';
 
@@ -19,13 +19,15 @@ const Application = (props) => {
 		dispatch(applicationInitialize());
 	}, [dispatch]);
 
+	const printRef = useRef();
+
 	return (
 		<>
 			{
 				applicationState.initialized &&
 				<BrowserRouter>
-					<Layout>
-						<Router/>
+					<Layout printRef={printRef}>
+						<Router printRef={printRef}/>
 					</Layout>
 				</BrowserRouter>
 			}

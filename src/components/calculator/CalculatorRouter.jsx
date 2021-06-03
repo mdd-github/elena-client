@@ -4,7 +4,7 @@ import { Redirect, Route, Switch, useRouteMatch } from 'react-router-dom';
 import { Compatibility } from './Compatibility';
 import { Personal } from './Personal';
 
-export const CalculatorRouter = () => {
+export const CalculatorRouter = ({printRef}) => {
 	let {path} = useRouteMatch();
 
 	return (
@@ -13,10 +13,10 @@ export const CalculatorRouter = () => {
 				<Redirect to={`${path}/personal`}/>
 			</Route>
 			<Route path={`${path}/personal`}>
-				<Personal/>
+				<Personal printRef={printRef}/>
 			</Route>
 			<Route path={`${path}/compatibility`}>
-				<Compatibility/>
+				<Compatibility printRef={printRef}/>
 			</Route>
 			<Route path="*">
 				<h1>Not found</h1>
