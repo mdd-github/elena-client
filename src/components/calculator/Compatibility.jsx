@@ -30,7 +30,7 @@ export const Compatibility = () => {
 	}, [dispatch]);
 
 	return (
-		<div className="container-fluid ps-5 pe-5">
+		<div className="container-fluid ps-5 pe-5" style={{'maxWidth':'1440px'}}>
 			<div className="row mt-5">
 				<div className="col-12 col-lg-6">
 					<h2 className="mb-3 text-center">Расчёт совместимости</h2>
