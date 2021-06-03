@@ -28,6 +28,11 @@
       height: 2.5rem;
       border: 2px solid #000;
       border-radius: 50%;
+
+      @media print {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
     }
     position: relative;
     font-size: 1.25rem;
@@ -35,15 +40,32 @@
     width: 2.5rem;
     height: 2.5rem;
     text-align: center;
+
+    @media print {
+      font-size: 0.8rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      line-height: 1.5rem;
+    }
   }
 
   &_Name {
     font-size: 0.9rem;
     height: 2.5rem;
     line-height: 2.5rem;
+    @media print {
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   &_Bracket {
     font-size: 5rem;
+
+    @media print {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
   }
 }

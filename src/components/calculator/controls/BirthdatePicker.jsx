@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
-export const BirthdatePicker = ({onChangeValue, initialDate}) => {
+export const BirthdatePicker = ({onChangeValue, initialDate, name, setName}) => {
 	const [value, setValue] = useState(initialDate);
 	const [year, setYear] = useState(value.getFullYear());
 	const [month, setMonth] = useState(value.getMonth());
 	const [date, setDate] = useState(value.getDate());
-	const [name, setName] = useState('');
 
 	const changeName = (e) => {
 		setName(e.target.value);

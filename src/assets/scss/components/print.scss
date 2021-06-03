@@ -1,0 +1,64 @@
+
+@media print {
+  .print {
+    display: block;
+
+    &-matrix {
+      position: absolute;
+
+      left: 0.75cm;
+      width: 10cm;
+      height: 10cm;
+    }
+
+    &-parameter-1 {
+      position: absolute;
+      top: 9.5cm;
+
+      width: 5.5cm;
+      height: 4cm;
+    }
+
+    &-parameter-2 {
+      position: absolute;
+      top: 9.5cm;
+      left: 6cm;
+
+      width: 5.5cm;
+      height: 4cm;
+    }
+
+    &-parameter-3 {
+      position: absolute;
+      top: 14cm;
+
+      width: 5.5cm;
+      height: 4cm;
+    }
+
+    &-parameter-4 {
+      position: absolute;
+      top: 14cm;
+      left: 6cm;
+
+      width: 5.5cm;
+      height: 4cm;
+    }
+
+    &-tables {
+      position: absolute;
+      top: 1cm;
+      right: 1cm;
+      width: 14cm;
+      height: 17cm;
+
+      .name {
+        margin-left: -0.95rem!important;
+      }
+    }
+  }
+
+  .print-root {
+    position: relative;
+  }
+}

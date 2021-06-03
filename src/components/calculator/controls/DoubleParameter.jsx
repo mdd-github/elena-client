@@ -14,7 +14,7 @@ export const DoubleParameter = (props) => {
 				</div>
 				</div>
 				<div className="col-12">
-					<div className="row h-100 d-flex">
+					<div className="row d-flex">
 						<div className="col-4 justify-content-center align-self-center">
 							<div className="row mb-2">
 								<div className="d-flex align-items-center">

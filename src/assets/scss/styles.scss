@@ -10,6 +10,17 @@ h2, h3, h4, h5, h6 {
   color: $color-navbar;
 }
 
+@media screen {
+  .print {
+    display: none;
+  }
+}
+
 @page {
   size: A4 landscape;
+  margin: 1cm;
+}
+
+@media print {
+
 }
