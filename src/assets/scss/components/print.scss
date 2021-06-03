@@ -1,48 +1,103 @@
 
 @media print {
+  .print-root {
+    position: relative;
+    display: block;
+  }
+
   .print {
     display: block;
+
+    &-root {
+      position: relative;
+      display: block;
+    }
+
+    &-page-next {
+      padding-bottom: 100vh;
+    }
 
     &-matrix {
       position: absolute;
 
-      left: 0.75cm;
-      width: 10cm;
-      height: 10cm;
+      width: 11.5cm;
+      height: 11.5cm;
+    }
+    &-matrix2 {
+      position: absolute;
+
+      width: 17cm;
+      height: 17cm;
     }
 
     &-parameter-1 {
       position: absolute;
-      top: 9.5cm;
+      top: 11cm;
 
       width: 5.5cm;
-      height: 4cm;
+      height: 3.75cm;
     }
 
     &-parameter-2 {
       position: absolute;
-      top: 9.5cm;
+      top: 11cm;
       left: 6cm;
 
       width: 5.5cm;
-      height: 4cm;
+      height: 3.75cm;
     }
 
     &-parameter-3 {
       position: absolute;
-      top: 14cm;
+      top: 15cm;
 
       width: 5.5cm;
-      height: 4cm;
+      height: 3.75cm;
     }
 
     &-parameter-4 {
       position: absolute;
-      top: 14cm;
+      top: 15cm;
       left: 6cm;
 
       width: 5.5cm;
-      height: 4cm;
+      height: 3.75cm;
+    }
+
+    &-parameter2-1 {
+      position: absolute;
+      top: 1cm;
+      right: 0;
+
+      width: 5.5cm;
+      height: 5cm;
+    }
+
+    &-parameter2-2 {
+      position: absolute;
+      top: 1cm;
+      right: 6cm;
+
+      width: 5.5cm;
+      height: 5cm;
+    }
+
+    &-parameter2-3 {
+      position: absolute;
+      top: 6.25cm;
+      right: 0;
+
+      width: 5.5cm;
+      height: 5cm;
+    }
+
+    &-parameter2-4 {
+      position: absolute;
+      top: 6.25cm;
+      right: 6cm;
+
+      width: 5.5cm;
+      height: 5cm;
     }
 
     &-tables {
@@ -56,9 +111,5 @@
         margin-left: -0.95rem!important;
       }
     }
-  }
-
-  .print-root {
-    position: relative;
   }
 }

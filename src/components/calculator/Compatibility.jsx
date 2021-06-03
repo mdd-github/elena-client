@@ -6,12 +6,16 @@ import { DoubleParameter } from './controls/DoubleParameter';
 import { SingleParameter } from './controls/SingleParameter';
 import { useDispatch, useSelector } from 'react-redux';
 import { compatibilitySetDate1, compatibilitySetDate2, compatibilityUpdate } from '../../store/compatibility/actions';
-import { useEffect } from 'react';
+import {useEffect, useState} from 'react';
 import { CompatibilityMatrix } from './controls/CompatibilityMatrix';
+import {CompatibilityPrint} from './CompatibilityPrint';
 
 export const Compatibility = ({printRef}) => {
 	const dispatch = useDispatch();
 	const state = useSelector(state => state.compatibility);
+
+	const [name1, setName1] = useState('');
+	const [name2, setName2] = useState('');
 
 	const changeBirthdate1 = (date) => {
 		dispatch(compatibilitySetDate1(date));
@@ -30,14 +34,14 @@ export const Compatibility = ({printRef}) => {
 	}, [dispatch]);
 
 	return (
-		<div className="container-fluid  ps-3 pe-3 ps-lg-5 pe-lg-5" style={{'maxWidth':'1440px'}} ref={printRef}>
+		<div className="container-fluid  ps-3 pe-3 ps-lg-5 pe-lg-5" style={{'maxWidth':'1440px'}}>
 			<div className="row mt-5">
 				<div className="col-12 col-lg-6">
 					<h2 className="mb-3 text-center">Расчёт совместимости</h2>
 					<PersonalMatrix values={state.matrixValues1}/>
 				</div>
 				<div className="col-12 col-lg-6">
-					<BirthdatePicker onChangeValue={changeBirthdate1} initialDate={state.date1}/>
+					<BirthdatePicker onChangeValue={changeBirthdate1} initialDate={state.date1} name={name1} setName={setName1}/>
 					<AdditionalTable values={state.additionalTableValues1}/>
 					<Navigator values={state.navigatorValues1}/>
 				</div>
@@ -68,7 +72,7 @@ export const Compatibility = ({printRef}) => {
 					<PersonalMatrix values={state.matrixValues2}/>
 				</div>
 				<div className="col-12 col-lg-6">
-					<BirthdatePicker onChangeValue={changeBirthdate2} initialDate={state.date2}/>
+					<BirthdatePicker onChangeValue={changeBirthdate2} initialDate={state.date2} name={name2} setName={setName2}/>
 					<AdditionalTable values={state.additionalTableValues2}/>
 					<Navigator values={state.navigatorValues2}/>
 				</div>
@@ -121,6 +125,8 @@ export const Compatibility = ({printRef}) => {
 					</div>
 				</div>
 			</div>
+
+			<CompatibilityPrint name1={name1} name2={name2} printRef={printRef}/>
 		</div>
 	);
 };
