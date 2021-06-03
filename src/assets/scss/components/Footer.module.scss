@@ -1,0 +1,22 @@
+
+.footer {
+  background: #000;
+  color: #FFF;
+
+  ul {
+    list-style: none;
+
+    li{
+      margin: 0.5rem;
+    }
+
+    a {
+      color: #ddd;
+      text-decoration: none;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
