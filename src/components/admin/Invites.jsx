@@ -15,7 +15,7 @@ export const Invites = () => {
 
 
 	return (
-		<div className="container">
+		<div className="container min-vh-100">
 			<div className="row">
 				<div className="col-10 mt-3 mb-3">
 					<NavBreadcrumbs/>

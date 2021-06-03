@@ -80,7 +80,7 @@ export const Login = () => {
 	}
 
 	return (
-		<div className="container">
+		<div className="container min-vh-100">
 			<div className="row">
 				<div className="col-12 mt-5 text-center">
 					<h1>Вход в аккаунт</h1>

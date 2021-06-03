@@ -104,7 +104,7 @@ export const Register = () => {
 	};
 
 	return (
-		<div className="container mb-5">
+		<div className="container mb-5 min-vh-100">
 			<div className="row">
 				<div className="col-12 mt-5 text-center">
 					<h1>Регистрация</h1>

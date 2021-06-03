@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const CheckEmail = () => {
 	return (
-		<div className='container'>
+		<div className='container min-vh-100'>
 			<div className="row mt-5">
 				<div className="col-12">
 					<h1>Вы успешно зарегистрированы.</h1>
