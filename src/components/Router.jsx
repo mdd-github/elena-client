@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { AuthRouter } from './auth/AuthRouter';
 import { CalculatorRouter } from './calculator/CalculatorRouter';
 import { AdminRouter } from './admin/AdminRouter';
+import {HomePage} from './HomePage';
 
 
 export const Router = () => {
@@ -12,12 +13,12 @@ export const Router = () => {
 	return (
 		<Switch>
 			<Route path="/" exact>
-				<Redirect to="/calculator"/>
+				<HomePage/>
 			</Route>
 
 			<Route path="/auth"> {
 				authState.authorized
-					? <Redirect to="/calculator"/>
+					? <Redirect to="/"/>
 					: <AuthRouter/>
 			} </Route>
 

@@ -1,0 +1,100 @@
+
+.home {
+  background: url("../../images/background.jpg") center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: linear-gradient(top, rgba(6,118,123,0.70), rgba(17,18,18,1));
+    background: -webkit-linear-gradient(top, rgba(6,118,123,0.70), rgba(17,18,18,1));
+  }
+
+  &_Inner {
+    z-index: 1;
+    color: white;
+    text-align: center;
+    @media screen and (max-width: 570px){
+      flex-direction: column;
+      font-size: 0.75rem;
+    }
+  }
+
+  &_Orange {
+    color: rgb(255, 99, 71);
+
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 570px){
+      flex-direction: column;
+      font-size: 1.25rem;
+    }
+  }
+
+  &_Title {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    @media screen and (max-width: 570px){
+      flex-direction: column;
+      font-size: 1.5rem;
+    }
+  }
+
+  &_Description {
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+
+  &_Buttons {
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: #333;
+      background: #eee;
+
+      padding: 1rem 3rem;
+      font-weight: 300;
+      font-size: 1.25rem;
+
+      border-radius: 2rem;
+
+      border:none;
+      margin: 1rem;
+
+      text-transform: uppercase;
+
+      @media screen and (max-width: 570px){
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 570px){
+      flex-direction: column;
+    }
+  }
+
+  &_ButtonOrange {
+    background: rgb(255, 99, 71) !important;
+    color: #fff!important;
+  }
+}
