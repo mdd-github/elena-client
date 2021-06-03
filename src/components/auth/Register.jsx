@@ -141,7 +141,7 @@ export const Register = () => {
 												 value={formData.invite} onChange={onChange} placeholder="Код приглашения"/>
 								</div>
 								<div className="form-group mt-3">
-									<input type="submit" className="form-control btn btn-lg btn-primary"/>
+									<input type="submit" className="form-control btn btn-lg btn-primary text-light"/>
 								</div>
 							</form>
 						</div>

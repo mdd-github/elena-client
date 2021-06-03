@@ -101,7 +101,7 @@ export const Login = () => {
 						</div>
 						<div className="form-group mt-3">
 							<small className="mb-2 text-danger">{loginError}</small>
-							<input type="submit" className="form-control btn btn-lg btn-primary"/>
+							<input type="submit" className="form-control btn btn-lg btn-primary text-light"/>
 						</div>
 					</form>
 				</div>
