@@ -3,7 +3,7 @@ import {
 	USERS_GET_ALL_FAILED,
 	USERS_GET_ALL_SUCCEED,
 	USERS_REMOVE, USERS_REMOVE_FAILED,
-	USERS_REMOVE_SUCCEED,
+	USERS_REMOVE_SUCCEED, USERS_SET_ROLE, USERS_SET_ROLE_FAILED, USERS_SET_ROLE_SUCCEED,
 } from './actions';
 
 const initialState = {
@@ -42,6 +42,27 @@ export const usersReducer = (state = initialState, action) => {
 			};
 		case USERS_REMOVE_SUCCEED:
 		case USERS_REMOVE_FAILED:
+			return {
+				...state,
+				waitForResponse: false,
+			};
+		case USERS_SET_ROLE:
+			return {
+				...state,
+				all: state.all.map((user) => {
+					if(user.id === action.id){
+						return {
+							...user,
+							role: action.role,
+						}
+					}else {
+						return user;
+					}
+				}),
+				waitForResponse: true,
+			};
+		case USERS_SET_ROLE_SUCCEED:
+		case USERS_SET_ROLE_FAILED:
 			return {
 				...state,
 				waitForResponse: false,

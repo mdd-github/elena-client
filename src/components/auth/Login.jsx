@@ -12,7 +12,9 @@ export const Login = () => {
 
 	useEffect(() => {
 		dispatch(authLoginMount());
-		return () => dispatch(authLoginUnmount());
+		return () => {
+			dispatch(authLoginUnmount());
+		}
 	}, [dispatch]);
 
 	const history = useHistory();

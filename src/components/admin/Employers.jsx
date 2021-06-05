@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavBreadcrumbs} from './controls/NavBreadcrumbs';
 import s from '../../assets/scss/components/Navigator.module.scss';
 import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
-import {usersBan, usersGetAll, usersRemove, usersUnban} from '../../store/users/actions';
+import {usersBan, usersGetAll, usersRemove, usersSetRole, usersUnban} from '../../store/users/actions';
 
 export const Employers = () => {
 	const users = useSelector(state => state.users);
@@ -26,6 +26,10 @@ export const Employers = () => {
 	const unban = (id) => {
 		dispatch(usersUnban(id));
 	};
+
+	const changeRole = (id, role) => {
+		dispatch(usersSetRole(id, role));
+	}
 
 	return (
 		<div className="container min-vh-100">
@@ -59,18 +63,32 @@ export const Employers = () => {
 											}
 										</td>
 										<td>{user.email}</td>
-										<td>{user.role}</td>
+										<td >
+											{
+												auth?.id !== user.id ?
+													<select className="form-select form-select-sm" value={user.role}
+																	onChange={(e) => changeRole(user.id, e.target.value)}>
+														<option value="admin">Администратор</option>
+														<option value="employee">Сотрудник</option>
+													</select> :
+													<select className="form-select form-select-sm" value={user.role}
+																	onChange={(e) => changeRole(user.id, e.target.value)} disabled="1">
+														<option value="admin">Администратор</option>
+														<option value="employee">Сотрудник</option>
+													</select>
+											}
+										</td>
 										<td>
 											{
 												auth?.id !== user.id ?
 													<>
 														{
-															!user.banned && <Link to="#" onClick={() => ban(user.id)}>Заблокировать</Link>
+															!user.banned && <Link to="#" onClick={() => ban(user.id)} className="btn btn-sm btn-secondary">Заблокировать</Link>
 														}
 														{
-															user.banned && <Link to="#" onClick={() => unban(user.id)}>Разблокировать</Link>
+															user.banned && <Link to="#" onClick={() => unban(user.id)} className="btn btn-sm btn-secondary">Разблокировать</Link>
 														}
-														| <Link to="#" onClick={() => remove(user.id)}>Удалить</Link>
+														<Link to="#" onClick={() => remove(user.id)} className="btn btn-sm btn-danger m-1">Удалить</Link>
 													</> : <>&nbsp;</>
 											}
 										</td>

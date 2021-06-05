@@ -18,6 +18,10 @@ export const USERS_UNBAN = 'USERS/UNBAN';
 export const USERS_UNBAN_SUCCEED = 'USERS/UNBAN/SUCCEED';
 export const USERS_UNBAN_FAILED = 'USERS/UNBAN/FAILED';
 
+export const USERS_SET_ROLE = 'USERS/SET_ROLE';
+export const USERS_SET_ROLE_SUCCEED = 'USERS/SET_ROLE/SUCCEED';
+export const USERS_SET_ROLE_FAILED = 'USERS/SET_ROLE/FAILED';
+
 export const usersGetAll = () => {
 	return async (dispatch, getState) => {
 		dispatch({type: USERS_GET_ALL});
@@ -110,5 +114,27 @@ export const usersUnban = (id) => {
 		}
 
 		dispatch(usersGetAll());
+	}
+}
+
+export const usersSetRole = (id, role) => {
+	return async (dispatch, getState) => {
+		dispatch({type: USERS_SET_ROLE, role: role, id: id});
+
+		const response = await sendPOST('user/set-role/' + id + '/' + role, {}, {
+			'Authorization': 'Bearer ' + getState().auth.token
+		});
+
+		if(response.success) {
+			dispatch({
+				type: USERS_SET_ROLE_SUCCEED,
+			});
+		} else {
+			dispatch({
+				type: USERS_SET_ROLE_FAILED,
+				errorCode: response.payload.errorCode,
+				errorMessage: response.payload.errorMessage,
+			});
+		}
 	}
 }
