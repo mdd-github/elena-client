@@ -5,6 +5,7 @@ import { AuthRouter } from './auth/AuthRouter';
 import { CalculatorRouter } from './calculator/CalculatorRouter';
 import { AdminRouter } from './admin/AdminRouter';
 import {HomePage} from './HomePage';
+import {ProfileRouter} from './profile/ProfileRouter';
 
 
 export const Router = ({printRef}) => {
@@ -25,6 +26,12 @@ export const Router = ({printRef}) => {
 			<Route path="/admin"> {
 				authState.authorized && authState.role === 'admin'
 					? <AdminRouter/>
+					: <Redirect to="/"/>
+			} </Route>
+
+			<Route path="/profile"> {
+				authState.authorized
+					? <ProfileRouter/>
 					: <Redirect to="/"/>
 			} </Route>
 

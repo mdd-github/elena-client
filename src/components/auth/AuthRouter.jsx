@@ -3,6 +3,7 @@ import { Switch, Route, useRouteMatch, Redirect } from 'react-router-dom';
 import { Login } from './Login';
 import { Register } from './Register';
 import { CheckEmail } from './CheckEmail';
+import {PasswordChanged} from './PasswordChanged';
 
 export const AuthRouter = () => {
 	let { path } = useRouteMatch();
@@ -20,6 +21,9 @@ export const AuthRouter = () => {
 			</Route>
 			<Route path={`${path}/check-email`}>
 				<CheckEmail/>
+			</Route>
+			<Route path={`${path}/password-changed`}>
+				<PasswordChanged/>
 			</Route>
 			<Route path="*">
 				<h1>Not found</h1>

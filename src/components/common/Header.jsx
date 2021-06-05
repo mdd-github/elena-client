@@ -79,6 +79,10 @@ export const Header = ({printRef}) => {
 							}
 
 							<li className="nav-item">
+								<Link to="/profile/change-password" className="nav-link">Сменить паролль</Link>
+							</li>
+
+							<li className="nav-item">
 								<Link to="#" onClick={onLogout} className="nav-link">Выход</Link>
 							</li>
 						</ul>

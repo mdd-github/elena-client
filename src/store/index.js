@@ -8,6 +8,7 @@ import { personalReducer } from './personal/reducer';
 import { compatibilityReducer } from './compatibility/reducer';
 import { usersReducer } from './users/reducer';
 import { invitesReducer } from './invites/reducer';
+import {profileReducer} from './profile/reducer';
 
 
 const reducers = combineReducers({
@@ -17,6 +18,7 @@ const reducers = combineReducers({
 	compatibility: compatibilityReducer,
 	users: usersReducer,
 	invites: invitesReducer,
+	profile: profileReducer,
 });
 
 const middlewares = [thunk];
