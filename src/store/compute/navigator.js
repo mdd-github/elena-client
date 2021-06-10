@@ -43,7 +43,7 @@ export const computeNavigator = (date) => {
 	result[17] = add(result[15] + result[16]);
 	result[18] = matrix[4];
 	result[19] = matrix[6];
-	result[20] = add(result[0] + result[1]);
+	result[20] = add(result[18] + result[19]);
 
 	result[21] = add(result[0] + result[3] + result[6] + result[9] + result[12] + result[15] + result[18])
 	result[22] = add(result[1] + result[4] + result[7] + result[10] + result[13] + result[16] + result[19])
