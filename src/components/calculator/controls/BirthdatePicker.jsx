@@ -24,10 +24,12 @@ export const BirthdatePicker = ({onChangeValue, initialDate, name, setName}) => 
 
 	const changeValue = () => {
 		let newValue = new Date(year, month, date);
+		newValue.setFullYear(year, month, date);
 		if(newValue.getMonth() !== +month) {
 			setDate(1);
-			newValue = new Date(year, month, 1);
+			newValue.setFullYear(year, month, 1);
 		}
+
 		setValue(newValue);
 		onChangeValue(newValue);
 	};
