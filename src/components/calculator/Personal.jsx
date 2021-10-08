@@ -6,7 +6,7 @@ import { SingleParameter } from './controls/SingleParameter';
 import { DoubleParameter } from './controls/DoubleParameter';
 import { useDispatch, useSelector } from 'react-redux';
 import { personalSetDate } from '../../store/personal/actions';
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {PersonalPrint} from './PersonalPrint';
 import {BehaviourRange} from "./controls/BehaviourRange";
 
@@ -57,8 +57,38 @@ export const Personal = ({printRef}) => {
 					</div>
 				</div>
 
-				<div className="col-12 mb-5">
+				<div className="col-12 mb-0">
 					<BehaviourRange range={state.behaviourRange}/>
+				</div>
+
+				<div className="col-12 print-col-12">
+					<div className="row">
+						<div className="col-12 p-0 mt-3">
+							<h5 className="mb-0">Активации личности и потенциала</h5>
+						</div>
+					</div>
+					<div className="row mt-0 mt-md-1 mb-5">
+						<div className="col-12 col-sm-6 col-lg-3 p-0 pe-sm-2 pe-lg-1 my-2">
+							<DoubleParameter title="1 Активация"
+											 values={state.personalityValues[0]}
+											 names={['Что', 'Где']}/>
+						</div>
+						<div className="col-12 col-sm-6 col-lg-3 p-0 ps-sm-2 ps-lg-1 pe-lg-1 my-2">
+							<DoubleParameter title="2 Активация"
+											 values={state.personalityValues[1]}
+											 names={['Что', 'Где']}/>
+						</div>
+						<div className="col-12 col-sm-6 col-lg-3 p-0 pe-sm-2 ps-lg-1 pe-lg-1 my-2">
+							<DoubleParameter title="3 Активация"
+											 values={state.personalityValues[2]}
+											 names={['Что', 'Где']}/>
+						</div>
+						<div className="col-12 col-sm-6 col-lg-3 p-0 ps-sm-2 ps-lg-1 my-2">
+							<DoubleParameter title="4 Активация"
+											 values={state.personalityValues[3]}
+											 names={['Что', 'Где']}/>
+						</div>
+					</div>
 				</div>
 			</div>
 

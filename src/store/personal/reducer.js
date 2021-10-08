@@ -10,6 +10,7 @@ const initialState = {
 	innerPointValue: 0,
 	planetaryValues: 0,
 	behaviourRange: [],
+	personalityValues: [[], [], [], []],
 }
 
 export const personalReducer = (state = initialState, action) => {
@@ -26,6 +27,7 @@ export const personalReducer = (state = initialState, action) => {
 				innerPointValue: action.innerPointValue,
 				planetaryValues: action.planetaryValues,
 				behaviourRange: action.behaviourRange,
+				personalityValues: action.personalityValues,
 			}
 		default:
 			return state;

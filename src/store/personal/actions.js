@@ -6,6 +6,7 @@ import { computeSocialization } from '../compute/socialization';
 import { computeInnerPoint } from '../compute/innerPont';
 import { computePlanetary } from '../compute/planetary';
 import {computeBehaviourRange} from "../compute/behaviourRange";
+import {computePersonality} from "../compute/personality";
 
 export const PERSONAL_SET_DATE = 'PERSONAL/SET_DATE';
 
@@ -21,5 +22,6 @@ export const personalSetDate = (date) => {
 		innerPointValue: computeInnerPoint(date),
 		planetaryValues: computePlanetary(date),
 		behaviourRange: computeBehaviourRange(date),
+		personalityValues: computePersonality(date),
 	}
 }
