@@ -1,0 +1,19 @@
+@import "../variables";
+
+.behaviour {
+  border: 1px solid #ddd;
+
+  &_Title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $color-navbar;
+  }
+
+  &_CurveContainer {
+    overflow-x: auto;
+  }
+
+  &_Curve{
+    min-width: 1100px;
+  }
+}

@@ -92,6 +92,10 @@ export const computeMatrix = (date) => {
 	values[79] = add(values[7] + values[80]);
 	values[83] = add(values[84] + values[82]);
 	values[85] = add(values[0] + values[84]);
+
+	/*for(let g = 0; g < 86; g++){
+		values[g] = g;
+	}*/
 	return values;
 }
 

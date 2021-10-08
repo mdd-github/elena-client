@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { personalSetDate } from '../../store/personal/actions';
 import {useEffect, useState} from 'react';
 import {PersonalPrint} from './PersonalPrint';
+import {BehaviourRange} from "./controls/BehaviourRange";
 
 export const Personal = ({printRef}) => {
 	const dispatch = useDispatch();
@@ -36,7 +37,7 @@ export const Personal = ({printRef}) => {
 					<Navigator values={state.navigatorValues}/>
 				</div>
 				<div className="col-12 print-col-12">
-					<div className="row mt-1 mt-md-3 mb-5">
+					<div className="row mt-1 mt-md-3 mb-1">
 						<div className="col-12 col-sm-6 col-lg-3 p-0 pe-sm-2 pe-lg-1 my-2">
 							<DoubleParameter title="Целостность" description="Код принятия себя"
 															 values={state.integrityValues} names={['Осознать', 'Создать']}/>
@@ -54,6 +55,10 @@ export const Personal = ({printRef}) => {
 															 value={state.planetaryValues}/>
 						</div>
 					</div>
+				</div>
+
+				<div className="col-12 mb-5">
+					<BehaviourRange range={state.behaviourRange}/>
 				</div>
 			</div>
 
