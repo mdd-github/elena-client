@@ -83,3 +83,35 @@ export const invitesCreate = () => {
 		dispatch(invitesGetAll());
 	}
 }
+
+export const invitesCreateNew = (code, expires, limit, isMultiple) => {
+	return async(dispatch, getState) => {
+		dispatch({type: INVITES_CREATE});
+
+		const response = await sendPOST('invite/generate', {
+			value: code,
+			limit: limit,
+			expiresAt: expires,
+			isGroup: isMultiple === '1',
+		}, {
+			'Authorization': 'Bearer ' + getState().auth.token
+		});
+
+		if(response.success) {
+			dispatch({
+				type: INVITES_CREATE_SUCCEED,
+			});
+		} else {
+			dispatch({
+				type: INVITES_CREATE_FAILED,
+				errorCode: response.payload.code,
+				errorMessage: response.payload.message,
+			});
+
+			console.log(response);
+			console.log(response.payload.message);
+		}
+
+		dispatch(invitesGetAll());
+	}
+}

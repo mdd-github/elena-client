@@ -1,0 +1,66 @@
+.invites {
+  &_Outer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0003;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  &_Inner {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+
+    h3{
+      display: block;
+      font-size: 1rem;
+      margin: 1rem;
+    }
+
+    &Header {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 1rem 1rem 0 1rem;
+
+      h3 {
+        font-size: 16px;
+        margin: 0;
+      }
+
+      button {
+        font-size: 14px;
+        background: none;
+        border: none;
+        outline: none;
+        color: #06767B;
+      }
+    }
+
+    &Body {
+      display: flex;
+      padding: 1rem;
+
+      h4 {
+        font-size: 14px;
+
+      }
+
+      small {
+        font-size: 12px;
+      }
+    }
+  }
+}

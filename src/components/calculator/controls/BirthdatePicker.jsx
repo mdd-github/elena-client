@@ -67,7 +67,7 @@ export const BirthdatePicker = ({onChangeValue, initialDate, name, setName}) => 
 			</div>
 
 			<div className="col-12 col-md-2 pe-0 ps-0 ps-md-3 mt-3 mt-md-0">
-				<button type="button" className="btn btn-sm btn-primary w-100"
+				<button type="button" className="btn btn-sm btn-success w-100"
 				onClick={changeValue}>
 					Применить
 				</button>
