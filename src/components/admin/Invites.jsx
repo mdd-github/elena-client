@@ -173,13 +173,13 @@ export const Invites = () => {
 
             <div className="container min-vh-100">
                 <div className="row">
-                    <div className="col-10 mt-3 mb-3">
+                    <div className="col-8 mt-3 mb-3">
                         <NavBreadcrumbs/>
                     </div>
-                    <div className="col-2 mt-3 mb-3 text-end">
+                    <div className="col-4 mt-3 mb-3 text-end">
                         <Link to="#" onClick={() => setShowCreateDialog(true)}
                               className="btn btn-success btn-sm">
-                            Сгенерировать
+                            Добавить код приглашения
                         </Link>
                     </div>
                 </div>

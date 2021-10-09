@@ -1,5 +1,6 @@
 import { sendGET } from '../api/sendGet';
 import { sendPOST } from '../api/sendPost';
+import {sendFile} from "../api/sendFile";
 
 
 export const USERS_GET_ALL = 'USERS/GET_ALL';
@@ -136,5 +137,29 @@ export const usersSetRole = (id, role) => {
 				errorMessage: response.payload.errorMessage,
 			});
 		}
+	}
+}
+
+export const usersImport = (file) => {
+	return async (dispatch, getState) => {
+		dispatch({type: USERS_REMOVE});
+
+		const response = await sendFile('user/import', file, {
+			'Authorization': 'Bearer ' + getState().auth.token
+		});
+
+		if(response.success) {
+			dispatch({
+				type: USERS_REMOVE_SUCCEED,
+			});
+		} else {
+			dispatch({
+				type: USERS_REMOVE_FAILED,
+				errorCode: response.payload.errorCode,
+				errorMessage: response.payload.errorMessage,
+			});
+		}
+
+		dispatch(usersGetAll());
 	}
 }

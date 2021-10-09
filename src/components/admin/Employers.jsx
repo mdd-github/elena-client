@@ -3,13 +3,12 @@ import {NavBreadcrumbs} from './controls/NavBreadcrumbs';
 import s from '../../assets/scss/components/Navigator.module.scss';
 import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
-import {usersBan, usersGetAll, usersRemove, usersSetRole, usersUnban} from '../../store/users/actions';
+import {usersBan, usersGetAll, usersImport, usersRemove, usersSetRole, usersUnban} from '../../store/users/actions';
 
 export const Employers = () => {
 	const users = useSelector(state => state.users);
 	const auth = useSelector(state => state.auth);
 	const dispatch = useDispatch();
-
 
 	useEffect(() => {
 		dispatch(usersGetAll());
@@ -31,11 +30,31 @@ export const Employers = () => {
 		dispatch(usersSetRole(id, role));
 	}
 
+	const [isLoading, setIsLoading] = useState(false);
+
+	const csvSelected = async (e) => {
+		if(e.target.files[0]) {
+			setIsLoading(true);
+			dispatch(usersImport(e.target.files[0]));
+
+			setTimeout(()=>{
+				dispatch(usersGetAll());
+				setIsLoading(false);
+			}, 5000);
+		}
+	}
+
 	return (
 		<div className="container min-vh-100">
 			<div className="row">
-				<div className="col-12 mt-3 mb-3">
+				<div className="col-10 mt-3 mb-3">
 					<NavBreadcrumbs/>
+				</div>
+				<div className="col-2 mt-3 mb-3 text-end">
+					<input type="file" className="d-none" id="csv" onChange={csvSelected}/>
+					<label className={"btn btn-sm " + (isLoading ? 'btn-secondary' : 'btn-success')} htmlFor="csv">
+						Импорт из CSV
+					</label>
 				</div>
 			</div>
 			<div className="row">
@@ -48,6 +67,8 @@ export const Employers = () => {
 								<th scope="col">Имя пользователя</th>
 								<th scope="col">E-mail</th>
 								<th scope="col">Роль</th>
+								<th scope="col">Пробный период</th>
+								<th scope="col">Активен до</th>
 								<th scope="col">Действия</th>
 							</tr>
 							</thead>
@@ -78,6 +99,16 @@ export const Employers = () => {
 													</select>
 											}
 										</td>
+										<td>{user.isTrial ? 'Да' : 'Нет'}</td>
+										<td>{user.isTrial ?
+										`${
+											new Date(user.trialExpiredAt).getDate()
+										}/${
+											new Date(user.trialExpiredAt).getMonth() + 1
+										}/${
+											new Date(user.trialExpiredAt).getFullYear()
+										}` : ''
+										}</td>
 										<td>
 											{
 												auth?.id !== user.id ?
