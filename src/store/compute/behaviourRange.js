@@ -13,7 +13,7 @@ export const computeBehaviourRange = (date) => {
     }
 
     for(let i = 0; i < cells.length; i++){
-        const j = matrix[i];
+        const j = matrix[cells[i]];
         count[j]++;
     }
 

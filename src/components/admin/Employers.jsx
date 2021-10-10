@@ -51,7 +51,8 @@ export const Employers = () => {
 					<NavBreadcrumbs/>
 				</div>
 				<div className="col-2 mt-3 mb-3 text-end">
-					<input type="file" className="d-none" id="csv" onChange={csvSelected}/>
+					<input type="file" className="d-none" id="csv" onChange={csvSelected}
+					accept=".csv"/>
 					<label className={"btn btn-sm " + (isLoading ? 'btn-secondary' : 'btn-success')} htmlFor="csv">
 						Импорт из CSV
 					</label>
