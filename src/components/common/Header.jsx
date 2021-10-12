@@ -10,6 +10,8 @@ import ReactToPrint from 'react-to-print';
 export const Header = ({printRef}) => {
 	const authorized = useSelector(state => state.auth.authorized);
 	const role = useSelector(state => state.auth.role);
+	const isTrial = useSelector(state => state.auth.isTrial);
+	const trialBefore = useSelector(state => state.auth.trialBefore);
 	const dispatch = useDispatch();
 	const path = useLocation();
 
@@ -62,7 +64,7 @@ export const Header = ({printRef}) => {
 										}}
 										content={() => printRef.current}
 									/>
-									
+
 								</li>
 							}
 						</ul>
@@ -71,6 +73,15 @@ export const Header = ({printRef}) => {
 					{
 						authorized &&
 						<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+							{
+								isTrial &&
+								<li className="nav-item">
+									<span className="nav-link text-danger fw-bold">
+										Пробный период до {trialBefore.getDay()}.{trialBefore.getMonth() + 1}
+									</span>
+								</li>
+							}
+
 							{
 								role === 'admin' &&
 								<li className="nav-item">

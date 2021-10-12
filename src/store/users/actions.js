@@ -144,7 +144,7 @@ export const usersImport = (file) => {
 	return async (dispatch, getState) => {
 		dispatch({type: USERS_REMOVE});
 
-		const response = await sendFile('user/import', file, {
+		const response = await sendFile('user/csv', file, {
 			'Authorization': 'Bearer ' + getState().auth.token
 		});
 

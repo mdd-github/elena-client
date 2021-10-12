@@ -7,7 +7,6 @@ export const sendFile = async (endpoint, body, headers) => {
     const request = await fetch(SERVER_URL + endpoint, {
         method: 'PUT',
         headers: {
-            'Accept': 'application/json',
             ...headers
         },
         body: fd,
@@ -15,7 +14,9 @@ export const sendFile = async (endpoint, body, headers) => {
     });
 
     if(request.ok) {
-        return await request.json();
+        return {
+            success: true
+        };
     } else {
         return {
             success: false,

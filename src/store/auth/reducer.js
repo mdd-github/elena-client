@@ -12,6 +12,8 @@ const initialState = {
 	token: '',
 	id: 0,
 	role: 'guest',
+	isTrial: false,
+	trialBefore: new Date(),
 
 	registerState: null,
 	loginState: null,
@@ -45,6 +47,8 @@ export const authReducer = (state = initialState, action) => {
 				token: action.token,
 				role: action.role,
 				id: action.id,
+				isTrial: action.isTrial,
+				trialBefore: action.trialBefore,
 			};
 		case AUTH_REFRESH_SESSION_FAILED:
 			return {
@@ -105,6 +109,7 @@ export const authReducer = (state = initialState, action) => {
 		case AUTH_LOGIN:
 			return {
 				...state,
+
 				loginState: {
 					...state.loginState,
 					waitForResponse: true,
@@ -117,6 +122,8 @@ export const authReducer = (state = initialState, action) => {
 				role: action.role,
 				id: action.id,
 				authorized: true,
+				isTrial: action.isTrial,
+				trialBefore: action.trialBefore,
 				loginState: {
 					...state.loginState,
 					waitForResponse: false,

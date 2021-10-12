@@ -34,6 +34,8 @@ export const authRefreshSession = () => {
 				token: response.payload.token,
 				role: response.payload.role,
 				id: response.payload.id,
+				isTrial: response.payload.isTrial,
+				trialBefore: new Date(response.payload.trialBefore),
 			});
 		} else {
 			dispatch({
@@ -87,6 +89,7 @@ export const authLogin = (formData) => {
 			email: formData.email,
 			password: formData.password,
 			fingerprint: getState().application.fingerprint,
+
 		});
 
 		if(response.success) {
@@ -95,6 +98,8 @@ export const authLogin = (formData) => {
 				token: response.payload.token,
 				role: response.payload.role,
 				id: response.payload.id,
+				isTrial: response.payload.isTrial,
+				trialBefore: new Date(response.payload.trialBefore),
 			});
 		} else {
 			dispatch({
