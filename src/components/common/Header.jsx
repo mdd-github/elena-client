@@ -77,7 +77,7 @@ export const Header = ({printRef}) => {
 								isTrial &&
 								<li className="nav-item">
 									<span className="nav-link text-danger fw-bold">
-										Пробный период до {trialBefore.getDay()}.{trialBefore.getMonth() + 1}
+										Пробный период до {trialBefore.getDate()}.{trialBefore.getMonth() + 1}
 									</span>
 								</li>
 							}
