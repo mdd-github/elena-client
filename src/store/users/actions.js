@@ -23,6 +23,10 @@ export const USERS_SET_ROLE = 'USERS/SET_ROLE';
 export const USERS_SET_ROLE_SUCCEED = 'USERS/SET_ROLE/SUCCEED';
 export const USERS_SET_ROLE_FAILED = 'USERS/SET_ROLE/FAILED';
 
+export const USERS_CHANGE_EXP_DATE = 'USERS/CHANGE_EXP_DATE';
+export const USERS_CHANGE_EXP_DATE_SUCCEED = 'USERS/CHANGE_EXP_DATE/SUCCEED';
+export const USERS_CHANGE_EXP_DATE_FAILED = 'USERS/CHANGE_EXP_DATE/FAILED';
+
 export const usersGetAll = () => {
 	return async (dispatch, getState) => {
 		dispatch({type: USERS_GET_ALL});
@@ -161,5 +165,30 @@ export const usersImport = (file) => {
 		}
 
 		dispatch(usersGetAll());
+	}
+}
+
+export const usersChangeExpirationDate = (id, date) => {
+	return async (dispatch, getState) => {
+		dispatch({type: USERS_CHANGE_EXP_DATE});
+
+		const response = await sendPOST('user/change-expiration', {
+			updateUserId: id,
+			newDate: date,
+		}, {
+			'Authorization': 'Bearer ' + getState().auth.token
+		});
+
+		if(response.success) {
+			dispatch({
+				type: USERS_CHANGE_EXP_DATE_SUCCEED,
+			});
+		} else {
+			dispatch({
+				type: USERS_CHANGE_EXP_DATE_FAILED,
+				errorCode: response.payload.errorCode,
+				errorMessage: response.payload.errorMessage,
+			});
+		}
 	}
 }
