@@ -1,10 +1,22 @@
 import {
-	AUTH_LOGIN, AUTH_LOGIN_FAILED,
-	AUTH_LOGIN_MOUNT, AUTH_LOGIN_SUCCEED, AUTH_LOGIN_UNMOUNT, AUTH_LOGOUT,
+	AUTH_LOGIN,
+	AUTH_LOGIN_FAILED,
+	AUTH_LOGIN_MOUNT,
+	AUTH_LOGIN_SUCCEED,
+	AUTH_LOGIN_UNMOUNT,
+	AUTH_LOGOUT,
 	AUTH_REFRESH_SESSION,
 	AUTH_REFRESH_SESSION_FAILED,
-	AUTH_REFRESH_SESSION_SUCCEED, AUTH_REGISTER, AUTH_REGISTER_FAILED,
-	AUTH_REGISTER_MOUNT, AUTH_REGISTER_SUCCEED, AUTH_REGISTER_UNMOUNT,
+	AUTH_REFRESH_SESSION_SUCCEED,
+	AUTH_REGISTER,
+	AUTH_REGISTER_FAILED,
+	AUTH_REGISTER_MOUNT,
+	AUTH_REGISTER_SUCCEED,
+	AUTH_REGISTER_UNMOUNT,
+	AUTH_RESET,
+	AUTH_RESET_FAILED,
+	AUTH_RESET_MOUNT,
+	AUTH_RESET_SUCCEED, AUTH_RESET_UNMOUNT,
 } from './actions';
 
 const initialState = {
@@ -17,6 +29,7 @@ const initialState = {
 
 	registerState: null,
 	loginState: null,
+	resetState: null,
 };
 
 const registerInitialState = {
@@ -27,6 +40,13 @@ const registerInitialState = {
 };
 
 const loginInitialState = {
+	waitForResponse: false,
+	success: false,
+	errorCode: 0,
+	errorMessage: '',
+}
+
+const resetInitialState = {
 	waitForResponse: false,
 	success: false,
 	errorCode: 0,
@@ -141,6 +161,45 @@ export const authReducer = (state = initialState, action) => {
 				},
 			};
 
+
+		case AUTH_RESET_MOUNT:
+			return {
+				...state,
+				resetState: {...resetInitialState},
+			};
+		case AUTH_RESET_UNMOUNT:
+			return {
+				...state,
+				resetState: null,
+			};
+		case AUTH_RESET:
+			return {
+				...state,
+
+				resetState: {
+					...state.resetState,
+					waitForResponse: true,
+				},
+			}
+		case AUTH_RESET_SUCCEED:
+			return {
+				...state,
+				resetState: {
+					...state.resetState,
+					waitForResponse: false,
+					success: true,
+				},
+			};
+		case AUTH_RESET_FAILED:
+			return {
+				...state,
+				resetState: {
+					...state.resetState,
+					waitForResponse: false,
+					errorCode: action.errorCode,
+					errorMessage: action.errorMessage,
+				},
+			};
 		case AUTH_LOGOUT:
 			return {
 				...state,

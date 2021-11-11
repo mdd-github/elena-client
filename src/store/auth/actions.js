@@ -18,6 +18,13 @@ export const AUTH_LOGIN = 'AUTH/LOGIN';
 export const AUTH_LOGIN_SUCCEED = 'AUTH/LOGIN/SUCCEED';
 export const AUTH_LOGIN_FAILED = 'AUTH/LOGIN/FAILED';
 
+export const AUTH_RESET_MOUNT = 'AUTH/RESET/MOUNT';
+export const AUTH_RESET_UNMOUNT = 'AUTH/RESET/UNMOUNT';
+
+export const AUTH_RESET = 'AUTH/RESET';
+export const AUTH_RESET_SUCCEED = 'AUTH/RESET/SUCCEED';
+export const AUTH_RESET_FAILED = 'AUTH/RESET/FAILED';
+
 export const AUTH_LOGOUT = 'AUTH/LOGOUT';
 
 export const authRefreshSession = () => {
@@ -89,7 +96,6 @@ export const authLogin = (formData) => {
 			email: formData.email,
 			password: formData.password,
 			fingerprint: getState().application.fingerprint,
-
 		});
 
 		if(response.success) {
@@ -104,6 +110,37 @@ export const authLogin = (formData) => {
 		} else {
 			dispatch({
 				type: AUTH_LOGIN_FAILED,
+				errorCode: response.payload.code,
+				errorMessage: response.payload.message,
+			});
+		}
+	};
+};
+
+
+export const authResetMount = () => ({
+	type: AUTH_RESET_MOUNT,
+});
+
+export const authResetUnmount = () => ({
+	type: AUTH_RESET_UNMOUNT,
+});
+
+export const authReset = (formData) => {
+	return async (dispatch, getState) => {
+		dispatch({type: AUTH_RESET});
+
+		const response = await sendPOST('user/reset-password', {
+			email: formData.email,
+		});
+
+		if(response.success) {
+			dispatch({
+				type: AUTH_RESET_SUCCEED,
+			});
+		} else {
+			dispatch({
+				type: AUTH_RESET_FAILED,
 				errorCode: response.payload.code,
 				errorMessage: response.payload.message,
 			});
