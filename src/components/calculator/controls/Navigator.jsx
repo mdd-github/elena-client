@@ -39,7 +39,7 @@ export const Navigator = (props) => {
 								<td className={s.cell_Value}>{props.values[8]}</td>
 							</tr>
 							<tr className={`${s.row} ${s.row_SpringGreen}`}>
-								<td className="text-start"><b>12.</b> Смысл жизни, картина мира, кто в центре</td>
+								<td className="text-start"><b>12.</b> Миропонимание, картина мира, кто в центре</td>
 								<td className={s.cell_Value}>{props.values[9]}</td>
 								<td className={s.cell_Value}>{props.values[10]}</td>
 								<td className={s.cell_Value}>{props.values[11]}</td>
