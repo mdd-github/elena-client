@@ -1,4 +1,5 @@
 import {
+	USERS_APPLY_INVITE, USERS_APPLY_INVITE_FAILED, USERS_APPLY_INVITE_START, USERS_APPLY_INVITE_SUCCEED,
 	USERS_GET_ALL,
 	USERS_GET_ALL_FAILED,
 	USERS_GET_ALL_SUCCEED,
@@ -10,6 +11,7 @@ const initialState = {
 	loaded: false,
 	waitForResponse: false,
 	all: [],
+	inviteError: false,
 };
 
 export const usersReducer = (state = initialState, action) => {
@@ -67,6 +69,31 @@ export const usersReducer = (state = initialState, action) => {
 				...state,
 				waitForResponse: false,
 			};
+
+		case USERS_APPLY_INVITE_START:
+			return {
+				...state,
+				inviteError: false,
+				waitForResponse: false,
+			}
+		case USERS_APPLY_INVITE:
+			return {
+				...state,
+				inviteError: false,
+				waitForResponse: true,
+			}
+		case USERS_APPLY_INVITE_SUCCEED:
+			return {
+				...state,
+				inviteError: false,
+				waitForResponse: false,
+			}
+		case USERS_APPLY_INVITE_FAILED:
+			return {
+				...state,
+				inviteError: true,
+				waitForResponse: false,
+			}
 		default:
 			return state;
 	}

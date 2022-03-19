@@ -1,6 +1,7 @@
 import { sendGET } from '../api/sendGet';
 import { sendPOST } from '../api/sendPost';
 import {sendFile} from "../api/sendFile";
+import {authRefreshSession} from "../auth/actions";
 
 
 export const USERS_GET_ALL = 'USERS/GET_ALL';
@@ -26,6 +27,12 @@ export const USERS_SET_ROLE_FAILED = 'USERS/SET_ROLE/FAILED';
 export const USERS_CHANGE_EXP_DATE = 'USERS/CHANGE_EXP_DATE';
 export const USERS_CHANGE_EXP_DATE_SUCCEED = 'USERS/CHANGE_EXP_DATE/SUCCEED';
 export const USERS_CHANGE_EXP_DATE_FAILED = 'USERS/CHANGE_EXP_DATE/FAILED';
+
+export const USERS_APPLY_INVITE_START = 'USERS/APPLY_INVITE/START';
+export const USERS_APPLY_INVITE = 'USERS/APPLY_INVITE';
+export const USERS_APPLY_INVITE_SUCCEED = 'USERS/APPLY_INVITE/SUCCEED';
+export const USERS_APPLY_INVITE_FAILED = 'USERS/APPLY_INVITE/FAILED';
+
 
 export const usersGetAll = () => {
 	return async (dispatch, getState) => {
@@ -189,6 +196,29 @@ export const usersChangeExpirationDate = (id, date) => {
 				errorCode: response.payload.errorCode,
 				errorMessage: response.payload.errorMessage,
 			});
+		}
+	}
+}
+
+export const usersApplyInvite = (invite) => {
+	return async (dispatch, getState) => {
+		dispatch({type: USERS_APPLY_INVITE});
+
+		const response = await sendGET('user/apply-invite/' + invite, {
+			'Authorization': 'Bearer ' + getState().auth.token
+		});
+
+		if(response.success) {
+			dispatch({
+				type: USERS_APPLY_INVITE_SUCCEED
+			});
+
+			dispatch(authRefreshSession());
+		} else {
+			dispatch({
+				type: USERS_APPLY_INVITE_FAILED,
+				inviteError: true,
+			})
 		}
 	}
 }

@@ -10,28 +10,17 @@ export const ExpiredPage = () => {
         <div className={s.home}>
             <div className={s.home_Inner + '  ps-3 pe-3'}>
 				<span className={s.home_Orange}>
-					Numero процессор expired
+					Numero процессор
 				</span>
                 <h1 className={s.home_Title}>
-                    Нумерологическая матрица по дате
+                    Пробный период истёк
                 </h1>
                 <span className={s.home_Description}>
-					Навигатор для ясной и понятной жизни,<br/>
-					без лишней мистики и предрассудков.
+					Срок действия вашего аккаунта истёк. Вы можете продлить его, введя промокод:
 				</span>
-                {
-                    !authState.authorized &&
-                    <div className={s.home_Buttons}>
-                        <Link to="/auth/login" className={s.home_ButtonOrange}>Войти</Link>
-                        <Link to="/auth/register" type="button">Зарегистрироваться</Link>
-                    </div>
-                }
-                {
-                    authState.authorized &&
-                    <div className={s.home_Buttons}>
-                        <Link to="/calculator" className={s.home_ButtonOrange}>Начать</Link>
-                    </div>
-                }
+                <div className={s.home_Buttons}>
+                    <Link to="/expired/enter-code" className={s.home_ButtonOrange}>Ввести промокод</Link>
+                </div>
             </div>
         </div>
     );

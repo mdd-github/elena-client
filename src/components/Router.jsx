@@ -44,11 +44,19 @@ export const Router = ({printRef}) => {
         )
     }
 
+
+
     return (
         <Switch>
             <Route path="/" exact>
                 <HomePage/>
             </Route>
+
+            <Route path="/auth"> {
+                authState.authorized
+                    ? <Redirect to="/"/>
+                    : <AuthRouter/>
+            } </Route>
 
             <Route path="/admin"> {
                 authState.authorized && authState.role === 'admin'
