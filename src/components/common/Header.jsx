@@ -8,6 +8,7 @@ import ReactToPrint from 'react-to-print';
 
 
 export const Header = ({printRef}) => {
+	const authState = useSelector((state) => state.auth);
 	const authorized = useSelector(state => state.auth.authorized);
 	const role = useSelector(state => state.auth.role);
 	const isTrial = useSelector(state => state.auth.isTrial);
@@ -54,7 +55,7 @@ export const Header = ({printRef}) => {
 							</li>
 
 							{
-								(path.pathname === '/calculator/compatibility' || path.pathname === '/calculator/personal') &&
+								((path.pathname === '/calculator/compatibility' || path.pathname === '/calculator/personal') && !(authState.isTrial && authState.trialBefore < new Date())) &&
 								<li className="nav-item">
 									<ReactToPrint
 										trigger={() => {
