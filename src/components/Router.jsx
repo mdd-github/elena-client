@@ -48,6 +48,10 @@ export const Router = ({printRef}) => {
 
     return (
         <Switch>
+            <Route path="/expired">
+                <Redirect to="/"/>
+            </Route>
+
             <Route path="/" exact>
                 <HomePage/>
             </Route>
