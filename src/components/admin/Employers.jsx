@@ -13,6 +13,8 @@ import {
     usersSetRole,
     usersUnban,
 } from '../../store/users/actions';
+import {CSVLink} from "react-csv";
+
 
 export const Employers = () => {
     const users = useSelector(state => state.users);
@@ -133,6 +135,19 @@ export const Employers = () => {
         return pages || [[]];
     }, [users, users?.all]);
 
+    const csvData = useMemo(() => {
+        const data = [];
+
+
+
+        return users?.all || [
+            ["firstname", "lastname", "email"],
+            ["Ahmed", "Tomi", "ah@smthing.co.com"],
+            ["Raed", "Labes", "rl@smthing.co.com"],
+            ["Yezzi", "Min l3b", "ymin@cocococo.com"]
+        ];
+    }, [users?.all])
+
     return (
         <>
             <div className={s2.invites_Outer + (showChangeDialog ? ' ' : ' d-none')}>
@@ -188,7 +203,7 @@ export const Employers = () => {
             </div>
             <div className="container min-vh-100">
                 <div className="row">
-                    <div className="col-10 mt-3 mb-3">
+                    <div className="col-8 mt-3 mb-3">
                         <NavBreadcrumbs/>
                     </div>
                     <div className="col-2 mt-3 mb-3 text-end">
@@ -197,6 +212,10 @@ export const Employers = () => {
                         <label className={'btn btn-sm ' + (isLoading ? 'btn-secondary' : 'btn-success')} htmlFor="csv">
                             Импорт из CSV
                         </label>
+                    </div>
+
+                    <div className="col-2 mt-3 mb-3 text-end">
+                        <CSVLink data={csvData} filename="users.csv" className="btn btn-sm btn-success">Экспорт в CSV</CSVLink>
                     </div>
                 </div>
                 <div className="row">
