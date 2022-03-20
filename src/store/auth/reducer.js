@@ -27,6 +27,8 @@ const initialState = {
 	isTrial: false,
 	trialBefore: new Date(),
 
+	emailConfirmed: true,
+
 	registerState: null,
 	loginState: null,
 	resetState: null,
