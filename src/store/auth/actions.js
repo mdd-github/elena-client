@@ -36,6 +36,12 @@ export const authRefreshSession = () => {
 		});
 
 		if(response.success) {
+			if(response.payload.role === 'admin') {
+				await sendPOST('invite/remove-expired', {}, {
+					'Authorization': 'Bearer ' + response.payload.token
+				});
+			}
+
 			dispatch({
 				type: AUTH_REFRESH_SESSION_SUCCEED,
 				token: response.payload.token,
@@ -100,6 +106,12 @@ export const authLogin = (formData) => {
 		});
 
 		if(response.success) {
+			if(response.payload.role === 'admin') {
+				await sendPOST('invite/remove-expired', {}, {
+					'Authorization': 'Bearer ' + response.payload.token
+				});
+			}
+
 			dispatch({
 				type: AUTH_LOGIN_SUCCEED,
 				token: response.payload.token,
