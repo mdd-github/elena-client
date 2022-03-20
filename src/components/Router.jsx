@@ -7,6 +7,8 @@ import {AdminRouter} from './admin/AdminRouter';
 import {HomePage} from './HomePage';
 import {ProfileRouter} from './profile/ProfileRouter';
 import {ExpiredRouter} from "./expired/ExpiredRouter";
+import {SendEmailConfirm} from "./profile/SendEmailConfirm";
+import {EmailConfirmed} from "./profile/EmailConfirmed";
 
 
 export const Router = ({printRef}) => {
@@ -17,6 +19,10 @@ export const Router = ({printRef}) => {
             <Switch>
                 <Route path="/" exact>
                     <HomePage/>
+                </Route>
+
+                <Route path="/confirmed" exact>
+                    <EmailConfirmed/>
                 </Route>
 
                 <Route path="/auth">
@@ -30,9 +36,27 @@ export const Router = ({printRef}) => {
         )
     }
 
+    if(!authState.emailConfirmed) {
+        return (
+            <Switch>
+                <Route path="/confirm-email">
+                    <SendEmailConfirm/>
+                </Route>
+
+                <Route path="*">
+                    <Redirect to="/confirm-email"/>
+                </Route>
+            </Switch>
+        )
+    }
+
     if((authState.isTrial && authState.trialBefore < new Date())) {
         return (
             <Switch>
+                <Route path="/confirmed" exact>
+                    <EmailConfirmed/>
+                </Route>
+
                 <Route path="/expired">
                     <ExpiredRouter/>
                 </Route>
@@ -44,11 +68,17 @@ export const Router = ({printRef}) => {
         )
     }
 
-
-
     return (
         <Switch>
+            <Route path="/confirmed" exact>
+                <EmailConfirmed/>
+            </Route>
+
             <Route path="/expired">
+                <Redirect to="/"/>
+            </Route>
+
+            <Route path="/confirm-email">
                 <Redirect to="/"/>
             </Route>
 

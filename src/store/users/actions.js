@@ -33,6 +33,8 @@ export const USERS_APPLY_INVITE = 'USERS/APPLY_INVITE';
 export const USERS_APPLY_INVITE_SUCCEED = 'USERS/APPLY_INVITE/SUCCEED';
 export const USERS_APPLY_INVITE_FAILED = 'USERS/APPLY_INVITE/FAILED';
 
+export const USERS_SEND_CONFIRMATION = 'USERS/SEND_CONFIRMATION';
+
 
 export const usersGetAll = () => {
 	return async (dispatch, getState) => {
@@ -219,6 +221,18 @@ export const usersApplyInvite = (invite) => {
 				type: USERS_APPLY_INVITE_FAILED,
 				inviteError: true,
 			})
+		}
+	}
+}
+
+export const usersSendConfirmation = () => {
+	return async (dispatch, getState) => {
+		const response = await sendPOST('user/send-confirmation', {}, {
+			'Authorization': 'Bearer ' + getState().auth.token
+		});
+
+		if(response.success) {
+			dispatch({type: USERS_SEND_CONFIRMATION});
 		}
 	}
 }

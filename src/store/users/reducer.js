@@ -4,7 +4,7 @@ import {
 	USERS_GET_ALL_FAILED,
 	USERS_GET_ALL_SUCCEED,
 	USERS_REMOVE, USERS_REMOVE_FAILED,
-	USERS_REMOVE_SUCCEED, USERS_SET_ROLE, USERS_SET_ROLE_FAILED, USERS_SET_ROLE_SUCCEED,
+	USERS_REMOVE_SUCCEED, USERS_SEND_CONFIRMATION, USERS_SET_ROLE, USERS_SET_ROLE_FAILED, USERS_SET_ROLE_SUCCEED,
 } from './actions';
 
 const initialState = {
@@ -12,6 +12,7 @@ const initialState = {
 	waitForResponse: false,
 	all: [],
 	inviteError: false,
+	confirmationSent: false,
 };
 
 export const usersReducer = (state = initialState, action) => {
@@ -93,6 +94,11 @@ export const usersReducer = (state = initialState, action) => {
 				...state,
 				inviteError: true,
 				waitForResponse: false,
+			}
+		case USERS_SEND_CONFIRMATION:
+			return {
+				...state,
+				confirmationSent: true,
 			}
 		default:
 			return state;

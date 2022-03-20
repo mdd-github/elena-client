@@ -1,8 +1,8 @@
 import React from 'react';
-import s from '../assets/scss/components/Home.module.scss'
-import {Link} from 'react-router-dom';
+import s from "./../../assets/scss/components/Home.module.scss";
+import {Link} from "react-router-dom";
 
-export const ExpiredPage = () => {
+export const EmailConfirmed = () => {
     return (
         <div className={s.home}>
             <div className={s.home_Inner + '  ps-3 pe-3'}>
@@ -10,13 +10,13 @@ export const ExpiredPage = () => {
 					Numero процессор
 				</span>
                 <h1 className={s.home_Title}>
-                    Пробный период истёк
+                    Ваш аккаунт подтверждён
                 </h1>
                 <span className={s.home_Description}>
-					Срок действия вашего аккаунта истёк. Вы можете продлить его, введя промокод:
+					Спасибо за использование нашего приложения
 				</span>
                 <div className={s.home_Buttons}>
-                    <Link to="/expired/enter-code" className={s.home_ButtonOrange}>Ввести промокод</Link>
+                    <Link to="/" className={s.home_ButtonOrange}>На главную</Link>
                 </div>
             </div>
         </div>
