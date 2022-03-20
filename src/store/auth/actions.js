@@ -41,6 +41,7 @@ export const authRefreshSession = () => {
 				token: response.payload.token,
 				role: response.payload.role,
 				id: response.payload.id,
+				emailConfirmed: response.payload.emailConfirmed,
 				isTrial: response.payload.isTrial,
 				trialBefore: new Date(response.payload.trialBefore),
 			});
@@ -104,6 +105,7 @@ export const authLogin = (formData) => {
 				token: response.payload.token,
 				role: response.payload.role,
 				id: response.payload.id,
+				emailConfirmed: response.payload.emailConfirmed,
 				isTrial: response.payload.isTrial,
 				trialBefore: new Date(response.payload.trialBefore),
 			});

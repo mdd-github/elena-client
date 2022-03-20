@@ -69,6 +69,7 @@ export const authReducer = (state = initialState, action) => {
 				token: action.token,
 				role: action.role,
 				id: action.id,
+				emailConfirmed: action.emailConfirmed,
 				isTrial: action.isTrial,
 				trialBefore: action.trialBefore,
 			};
@@ -144,6 +145,7 @@ export const authReducer = (state = initialState, action) => {
 				role: action.role,
 				id: action.id,
 				authorized: true,
+				emailConfirmed: action.emailConfirmed,
 				isTrial: action.isTrial,
 				trialBefore: action.trialBefore,
 				loginState: {
