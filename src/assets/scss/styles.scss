@@ -24,3 +24,11 @@ h2, h3, h4, h5, h6 {
 @media print {
 
 }
+
+.dropdown-item {
+  color: #444 !important;
+
+  &:hover {
+    color: #000 !important;
+  }
+}

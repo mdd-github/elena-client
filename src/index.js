@@ -9,6 +9,7 @@ import { Layout } from './components/common/Layout';
 
 import './assets/scss/styles.scss';
 import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/js/bootstrap.js';
 
 
 const Application = (props) => {

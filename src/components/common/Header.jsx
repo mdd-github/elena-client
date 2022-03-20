@@ -74,6 +74,30 @@ export const Header = ({printRef}) => {
 					{
 						authorized &&
 						<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+
+							<li className="nav-item dropdown">
+								<a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								   data-bs-toggle="dropdown" aria-expanded="false">
+									Аккаунт
+								</a>
+								<ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+									{
+										role === 'admin' &&
+										<li>
+											<NavLink to="/admin" className="nav-link dropdown-item">Администрирование</NavLink>
+										</li>
+									}
+
+									<li>
+										<Link to="/profile/change-password" className="nav-link dropdown-item">Сменить пароль</Link>
+									</li>
+
+									<li>
+										<Link to="#" onClick={onLogout} className="nav-link dropdown-item">Выход</Link>
+									</li>
+								</ul>
+							</li>
+
 							{
 								isTrial &&
 								<li className="nav-item">
@@ -83,20 +107,6 @@ export const Header = ({printRef}) => {
 								</li>
 							}
 
-							{
-								role === 'admin' &&
-								<li className="nav-item">
-									<NavLink to="/admin" className="nav-link">Администрирование</NavLink>
-								</li>
-							}
-
-							<li className="nav-item">
-								<Link to="/profile/change-password" className="nav-link">Сменить пароль</Link>
-							</li>
-
-							<li className="nav-item">
-								<Link to="#" onClick={onLogout} className="nav-link">Выход</Link>
-							</li>
 						</ul>
 					}
 
