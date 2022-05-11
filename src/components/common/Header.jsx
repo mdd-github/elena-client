@@ -102,7 +102,7 @@ export const Header = ({printRef}) => {
 								isTrial &&
 								<li className="nav-item">
 									<span className="nav-link text-danger fw-bold">
-										Доступ до {trialBefore.getDate()}.{trialBefore.getMonth() + 1}
+										Доступ до {trialBefore.getDate()}.{trialBefore.getMonth() + 1}.{trialBefore.getFullYear()}
 									</span>
 								</li>
 							}
